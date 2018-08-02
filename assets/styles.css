@@ -1,0 +1,365 @@
+/*At the moment, these are all personilized, albeit simple, stylings*/
+
+* {
+  box-sizing:border-box;
+  }
+body {
+  margin-bottom: 65px;
+  }
+
+.grid {
+  display:grid;
+  grid-gap:0px;
+  grid-template-areas:
+  "hd"
+  "nav"
+  "about"
+  "portfolio"
+  "contact"
+  "socials"
+  "ft";
+  align-self:stretch;
+  }
+
+.logo {
+  grid-area:hd;
+  align-self:flex-end;
+} 
+
+.nav {
+  grid-area:nav;
+  padding:10px;
+  border-style: solid;
+  border-bottom-width:1px ;
+  border-color:darkgrey;
+  }
+
+.about{
+  display: grid;
+  grid-area:about;
+  grid-template-rows: 1fr 11fr;
+  grid-template-columns:100%;
+  position: relative;
+}
+
+.portfolio {
+  grid-area:portfolio;
+  text-align:center;
+  }
+
+.contact {
+  grid-area:contact;
+  margin:0 auto;
+}
+
+.socials {
+  grid-area:socials
+}
+
+.footer {
+  grid-area:ft;
+  }  
+  
+.projectContainer {
+  border: 2px solid black;
+  margin :5px 50px;
+}  
+
+.emailContainer {
+  border:1px solid black;
+  margin: 20px auto;
+  padding:5px;
+  display:inline-block;
+  width:55vw;
+  height:15vh;
+}
+
+.selfPicture {
+  width:65px;
+  height:65px;
+  border-radius:25px;
+  position: absolute;
+  right:0;
+  bottom:0;
+  padding:3px;
+  margin:3px;
+}
+.mockup{
+   width:250px;
+   height:250px;
+   margin:5px auto;
+}
+img .what2eat {
+  height:auto;
+  width:100%;
+  margin:100px auto;
+  display:inline-block;
+}
+
+
+h1 {
+  Font-Family: 'Work Sans', Sans-Serif;
+  Font-Size: 2.8125em;  
+  padding:10px;
+  border:0;
+  text-align:left;
+  border-style:solid;
+  border-bottom-width:1px;
+  border-color:darkgrey;
+  }
+
+h2 {
+  Font-Family: 'Work Sans', Sans-Serif;
+  font-size:1.45em;
+  text-align:center;
+  }
+
+h3 {
+  Font-Family: 'Work Sans', Sans-Serif;
+  font-size:1.45em;
+  text-align:center;
+  }
+
+h4 {
+  font-size: 1.15em;
+  text-align:center;
+  }
+
+p {
+  Font-Family: 'Open Sans', Sans-Serif;
+  margin:10px;
+  padding:2px;
+  word-spacing:5px;
+  line-height:25px;
+  font-size:1em;
+  }
+
+.footer {
+  border-top-style:solid; border-width:7px;
+  text-align:center;border-color:grey;
+  max-height:50px;background-color:black; color:white;
+  position:fixed;
+  left:0;
+  right:0;
+  bottom:0;
+  }  
+/*link styling*/
+a {
+  text-decoration:none;
+  color:black;
+  }
+/*link effect*/
+a:hover {
+  color: grey;
+  }
+a > .portfolioNav {
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  }  
+#header {
+  text-align:center;
+  background-color:#ffffff;
+  align-self:bottom;
+  }
+/*nav styling*/
+#navs {
+    background-color:lightgrey;
+    align-self:end;
+  }
+#about {
+  border-style: solid;
+  border-width:2px;
+  border-color:darkgrey;
+  background-color:#ffffff;
+  margin:25px;
+  padding:10px;
+  max-height: auto;
+  }
+
+  @media only screen and (min-width: 640px) {
+    body {
+         max-width:auto;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .grid {
+        grid-template-rows:auto;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:"hd nav"
+                            "about about"
+                            "portfolio portfolio"
+                            "contact contact"
+                            "socials socials"
+                            "ft ft"
+        ;}
+    #navs {
+      background-color:white;
+    }   
+    #about{
+      margin:25px 150px;
+    } 
+}
+
+@media only screen and (min-width: 980px){
+    .grid {
+      grid-template-rows:auto;
+      grid-template-columns:1fr 1fr 1fr;
+      grid-template-areas:"hd hd nav"
+                          "about about about"
+                          "portfolio portfolio portfolio"
+                          "contact contact contact"
+                          "socials socials socials"
+                          "ft ft ft"
+        ;}
+   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+/*image styling*/
+/* img.self {
+  max-height:200px;
+  max-width:200px;
+  float:left;
+  margin:15px;
+  padding:0px;
+  } */
+/*image styling for .tag class*/
+img.tag {
+  max-width:75px;
+  height:55px;
+  margin-left: 30px;
+  }
+
+/*created a grid template for mobile with media queries at bottom of page*/
+
+
+
+/*assigned logo class to grid area header
+
+navs, nav, nest
+
+
+*/
+
+
+/*assignment for the topside links*/
+.nest {
+  display:grid;
+  grid-template-rows:1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  }
+
+
+
+.connect {
+  display: grid;
+  grid-template-rows: 1fr 3fr;
+  grid-template-columns:1fr;
+	border-style:solid;
+  border-width:2.5px;
+  border-color:grey;
+  max-height:150px;
+ }
+/*social link boxes*/
+.socials {
+  display: grid;
+  grid-template-rows: 1fr ;
+  grid-template-columns:1fr 1fr 1fr;
+  }
+  #socials {
+    border-style: solid;
+    border-width:2px;
+    border-color:darkgrey;
+    text-align:center;
+    background-color:#ffffff;
+    margin:25px;
+    padding:10px;
+    padding-top: 11px;
+    margin-top: 11px;
+  }
+
+
+
+
+
+
+/*footer stylings*/
+
+/*side links styling*/
+/* .effect {
+  padding-top: 11px;
+  margin-top: 11px;
+  } */
+/*header styling*/
+
+/*Bio styling*/
+
+/* social stylings*/
+
+
+
+
+
+
+
+/*margin on portfolio @980 needs to be fixed
+*/
+
+
+
+
+
+
+/* 
+TITLES
+Font-Family: 'Work Sans', Sans-Serif;
+Font-Size: 45px;
+
+SUB_LETTERING
+Font-Family: 'Open Sans', Sans-Serif;
+Font-Size: 15px; 
+*/ */

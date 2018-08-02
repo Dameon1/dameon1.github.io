@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" type="text/css" href="assets/reset.css">
+  <!-- <link rel="shortcut icon" href="forkAndKnife.png"/> -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Work+Sans:300" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="assets/styles.css">
+  <title>Dameon Mendoza's Portfolio page.</title>
+  <meta name="description" content="Dameon Mendoza's working profile page.">
+</head>
+ 
+<body>
+    
+  <div class="grid">
+  <div class="logo" id="header" role="banner">
+      <h1>D. Mendoza...</h1>
+  </div>      
+  <div id="navs" class= "nest nav" role="navigation">
+    <div><a href="#about"><h2>Social</h2></a></div>    
+    <div ><a href="#portfolio"><h2 class="portfolioNav">Portfolio</h2></a></div>
+    <div><a href="#contact"><h2>Contact</h2></a></div>
+  </div>
+  <!-- <a href="" target="blank"></a>
+  <a href="" target="blank"></a>
+  <a href="" target="blank"></a>
+  <a href="" target="blank"></a>
+  <a href="" target="blank"></a>
+  <a href="" target="blank"></a>
+  <a href="" target="blank"></a>
+  <a href="" target="blank"></a> -->
+  <div id="about" class="about">
+   <h3>Hello.</h3>
+   <p>I am Dameon. A Web Developer in the Tucson, Arizona area that specializies in the Javascript space with a focus
+     on responsive modern design. Working as a team with other developers I have helped create some interesting 
+     projects along with my own personal ones along the way. Contact me for help with you next Open-Source project,
+     Non-Profit start-up, or Adventurous Web Application ideas. 
+   </p>
+   <img class="selfPicture" src="assets/images/self.jpg" alt="Self-Protrait">
+  </div>
+
+  <div class="portfolio" role="main">
+    <h3>Projects</h3>
+
+    <div class="projectContainer">
+      <h3>what2eat</h3>
+      <p>A Recipe finder that allows users to see recipes based on the ingredints you have and lets you see how many you are missing for the particular recipe.
+         welcome page where you can make an account to get full features or continue on to the recipe finder itself for quick access.
+        On selecting a recipe you will get a soft view of the instructions and how to make the desired recipe with instructional overview.
+        There is a link at the bottom of the page leading to an in-depth overview of the recipe which will lead the user to a new page where a more in-depth view of the recipe is kept.
+        Created account users can keep track of saved recipes for quick access to get back to them , along with removing them if they are no longer wanted.</p>
+      <p>TECH STACK</p>
+      <a href="https://github.com/Dameon1/what2eat-client" target="blank"><button class="buttonSourceCode">Source Code-Client</button></a>
+      <a href="https://github.com/Dameon1/what2eat-server" target="blank"><button class="buttonSourceCode">Source Code-Server</button></a>
+      <a href="https://www.what2eat.website" target="blank"><button class="buttonDeployedSite">Deployed Site</button></a>
+      
+      <div class="mockup">
+      <img clasname="what2eat" src="assets/images/w2eMock.jpg" alt="computer images of website" width="300" height="200">
+      </div>
+      
+    </div>
+
+    <div class="projectContainer">
+      <h3>DevOps2</h3>
+      <p>Description paragraphs</p>
+      <p>TECH STACK</p>
+      <img src="" alt="">
+      <button class="buttonSourceCode">Source Code</button>
+      <button class="buttonDeployedSite">Deployed Site</button>
+    </div>
+
+    <div class="projectContainer">
+      <h3>Spanish Flash</h3>
+      <p>Spanish Flash is an app that uses a flash-card style approach to helping one learn Spanish.
+        The technique is backed up by the spaced repetition algorithm, which is proven to help with learning and enforcing one's understanding.phs</p>
+      <p>TECH STACK</p>
+      <a href="https://github.com/forgiv/spacedRepetition-client" target="blank"><button class="buttonSourceCode">Source Code-Client</button></a>
+      <a href="https://github.com/Dameon1/spacedRepition-server" target="blank"><button class="buttonSourceCode">Source Code-Server</button></a>
+      <a href="https://forgiv.github.io/spacedRepetition-client/" target="blank"><button class="buttonDeployedSite">Deployed Site</button></a>
+      <div class="mockup">
+          <img clasname="spanishFlash" src="assets/images/spanishFlash.jpg" alt="tablet images of website" width="300" height="200">
+     </div>
+    </div>
+    
+    <div class="projectContainer">
+      <h3>Art of Finding</h3>
+      <p>The "Art of Finding" application allows users to search for images of historic artwork.
+         It provides data about the work of art on a card, as well as the location of the gallery where the art work is currently on display.
+         Google Maps provides the address of the gallery. The user can browse Amazon to purchase images of the art work.
+      </p>
+      <p>TECH STACK</p>
+      <img src="" alt="">
+      <a href="https://github.com/Dameon1/artFinder" target="blank"><button class="buttonSourceCode">Source Code</button></a>
+      <a href="https://dameon1.github.io/artFinder/" target="blank"><button class="buttonDeployedSite">Deployed Site</button></a>
+    </div>
+    
+  </div>
+  <div id="contact" class="contact">
+    
+      <form  role='form' class="emailContainer" aria-live="polite" method="POST" action="https://formspree.io/dameonmendoza@gmail.com">
+       
+        <label for="email">Your Email</label><br>
+        <input type="email" name="email" placeholder="Your E-mail" aria-label="email"><br>
+        
+        <label for="message">Your message here.</label><br>
+        <textarea name="message" rows='3' placeholder="Your message" type="text" aria-label="message"></textarea><br>
+      </form>
+    
+  </div>
+  <div class="socials" >
+      <!-- <div>
+        <a href="https://github.com/Dameon1" target="blank"><img class="tag" src="assets/images/github.png" alt="fix"></a>
+      </div>  
+      <div>
+        <a href="https://www.linkedin.com/in/dameonmendoza" target="blank"><img class="tag" src="assets/images/linked.png" alt="fix"  ></a>
+      </div>
+      <div>
+        <a href="https://twitter.com/Dameon_H2O" target="blank"><img class="tag" src="assets/images/twitter.png" alt="M$"></a>
+      </div> -->
+  </div>
+    <!-- <div id="about" class="about pic" role="main">
+
+      <div>
+        <h2>Intro</h2>
+      </div>
+
+      <div>
+
+        <img class="self" src="assets/images/us.jpg" alt="Mountain View" >
+          <h4>2018</h4>
+        <p>
+           Hi, I'm Dameon. I enjoy making web applications and websites. 
+        </p>
+        <p>
+          Here are some links to things that I've worked on. This is an animal page about <a href="https://dameon1.github.io/babyLeos/" target="blank"> Baby Leopards</a>, and then I worked on Javascript mechanics in
+          this <a href="https://dameon1.github.io/Psychic-Game/" target="blank"> Psychic-Game</a> and a <a href="https://dameon1.github.io/Star-Wars-RPG/" target="blank">Star-Wars-RPG</a> . I'm currently working on API's, and have one
+          in working fashion using <a href="https://dameon1.github.io/giphy-api/" target="blank">Animal .GIFS</a> here.
+           A special shout to the people in the picture,(from left to right),
+          <a href="https://github.com/grstoltz" target="blank">Grant Stolz</a>,
+          <a href="https://github.com/tmederos" target="blank">Trish Mederos</a>,
+          <a href="https://github.com/akt12345" target="blank">Abby Thoresen</a>, and myself.
+           We worked really hard and recieved "Best App" for the<a href="https://dameon1.github.io/artFinder/" target="blank"> Art-of-Finding </a>application. You can click the links to the right to connect with
+          me on various social platforms, proffessionally and personally, on places like Github, StackOverflow, or LinkedIn.</p>
+
+      </div>
+    </div>
+
+    
+    <!-- <div id="socials" class="connect side" role="aside">
+
+      <div>
+        <h2>Social</h2>
+      </div>-->
+
+
+      
+
+    
+
+   
+  <div class="footer" role="contentinfo">
+      <h4>Copyright Dameon Mendoza@2018</h4>
+    
+  </div>
+   
+
+
+</div>
+
+    <!-- <script  rel="stylesheet"  src='assets/javascript/app.js'></script> -->
+
+</body>
+</html>
