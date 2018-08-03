@@ -3,6 +3,7 @@
 * {
   box-sizing:border-box;
   }
+
 body {
   margin-bottom: 65px;
   background: #f6f8f9; /* Old browsers */
@@ -64,11 +65,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f8f9', end
 .footer {
   grid-area:ft;
   }  
-  
-/* .projectContainer {
-  border: 2px solid black;
-  margin :5px 50px;
-}   */
+
 
 /* .emailContainer {
   border:1px solid black;
@@ -89,16 +86,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f8f9', end
   padding:3px;
   margin:3px;
 }
+
 .mockup{
    width:50%;
    margin:5px auto;
 }
-img .what2eat {
-  height:auto;
-  width:100%;
-  margin:100px auto;
-  display:inline-block;
-}
+
 img {
   width:100%;
 }
@@ -112,24 +105,24 @@ h1 {
   border-style:solid;
   border-bottom-width:1px;
   border-color:darkgrey;
-  }
+}
 
 h2 {
   Font-Family: 'Work Sans', Sans-Serif;
   font-size:1.45em;
   text-align:center;
-  }
+}
 
 h3 {
   Font-Family: 'Work Sans', Sans-Serif;
   font-size:1.45em;
   text-align:center;
-  }
+}
 
 h4 {
   font-size: 1.15em;
   text-align:center;
-  }
+}
 
 p {
   Font-Family: 'Open Sans', Sans-Serif;
@@ -138,7 +131,7 @@ p {
   word-spacing:5px;
   line-height:25px;
   font-size:1em;
-  }
+}
 
 .footer {
   border-top-style:solid; border-width:7px;
@@ -148,7 +141,7 @@ p {
   left:0;
   right:0;
   bottom:0;
-  }  
+}  
 /*link styling*/
 a {
   text-decoration:none;
@@ -162,11 +155,10 @@ a > .portfolioNav {
   border-left: 1px solid black;
   border-right: 1px solid black;
   }  
-#header {
+/* .header {
   text-align:center;
-  background-color:#ffffff;
   align-self:bottom;
-  }
+  } */
 /*nav styling*/
 #navs {
     background-color:lightgrey;
