@@ -166,7 +166,7 @@ a > .portfolioNav {
     background-color:lightgrey;
     align-self:end;
   }
-/* .contentContainer {
+.contentContainer {
   border-style: solid;
   border-width:2px;
   border-color:darkgrey;
@@ -174,7 +174,7 @@ a > .portfolioNav {
   margin:25px;
   padding:10px;
   max-height: auto;
-  } */
+  }
 
   @media only screen and (min-width: 640px) {
     body {
