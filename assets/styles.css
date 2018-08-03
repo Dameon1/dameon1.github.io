@@ -2,16 +2,16 @@
 
 * {
   box-sizing:border-box;
-  }
+}
 
 body {
   margin-bottom: 65px;
   background: #f6f8f9; /* Old browsers */
-background: -moz-linear-gradient(top, white 0%, #e5ebee 50%, #d7dee3 51%, #f5f7f9 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(top, white 0%,#e5ebee 50%,#d7dee3 51%,#f5f7f9 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom, white 0%,#e5ebee 50%,#d7dee3 51%,#f5f7f9 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f8f9', endColorstr='#f5f7f9',GradientType=0 ); /* IE6-9 */
-  }
+  background: -moz-linear-gradient(top, white 0%, #e5ebee 50%, #d7dee3 51%, #f5f7f9 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, white 0%,#e5ebee 50%,#d7dee3 51%,#f5f7f9 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, white 0%,#e5ebee 50%,#d7dee3 51%,#f5f7f9 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f8f9', endColorstr='#f5f7f9',GradientType=0 ); /* IE6-9 */
+}
 
 .grid {
   display:grid;
@@ -25,13 +25,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f8f9', end
   "socials"
   "ft";
   align-self:stretch;
-  }
+}
 
 .logo {
   grid-area:hd;
   align-self:flex-end;
 } 
-
+/* id="navs" class= "nest nav" */
 .nav {
   grid-area:nav;
   padding:10px;
@@ -51,7 +51,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f8f9', end
 .portfolio {
   grid-area:portfolio;
   text-align:center;
-  }
+}
 
 .contact {
   grid-area:contact;
@@ -64,9 +64,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f8f9', end
 
 .footer {
   grid-area:ft;
-  }  
-
-
+}  
 /* .emailContainer {
   border:1px solid black;
   margin: 20px auto;
@@ -91,12 +89,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f8f9', end
    width:50%;
    margin:5px auto;
 }
-
+/* need to add class to this for the multiImages */
 img {
   width:100%;
 }
 
-h1 {
+.header {
   Font-Family: 'Work Sans', Sans-Serif;
   Font-Size: 2.8125em;  
   padding:10px;
@@ -106,24 +104,24 @@ h1 {
   border-bottom-width:1px;
   border-color:darkgrey;
 }
-
+/* add class for more specificity */
 h2 {
   Font-Family: 'Work Sans', Sans-Serif;
   font-size:1.45em;
   text-align:center;
 }
-
+/* add class for more specificity */
 h3 {
   Font-Family: 'Work Sans', Sans-Serif;
   font-size:1.45em;
   text-align:center;
 }
-
+/* add class for more specificity */
 h4 {
   font-size: 1.15em;
   text-align:center;
 }
-
+/* add class for more specificity */
 p {
   Font-Family: 'Open Sans', Sans-Serif;
   margin:10px;
@@ -142,7 +140,7 @@ p {
   right:0;
   bottom:0;
 }  
-/*link styling*/
+/*link styling*//* add class for more specificity */
 a {
   text-decoration:none;
   color:black;
@@ -155,10 +153,7 @@ a > .portfolioNav {
   border-left: 1px solid black;
   border-right: 1px solid black;
   }  
-/* .header {
-  text-align:center;
-  align-self:bottom;
-  } */
+
 /*nav styling*/
 #navs {
     background-color:lightgrey;
@@ -266,11 +261,11 @@ a > .portfolioNav {
   padding:0px;
   } */
 /*image styling for .tag class*/
-img.tag {
+/* img.tag {
   max-width:75px;
   height:55px;
   margin-left: 30px;
-  }
+  } */
 
 /*created a grid template for mobile with media queries at bottom of page*/
 
@@ -282,7 +277,7 @@ navs, nav, nest
 
 
 */
-
+/* 
 
 /*assignment for the topside links*/
 .nest {
@@ -291,7 +286,7 @@ navs, nav, nest
   grid-template-columns: 1fr 1fr 1fr;
   }
 
-
+/* 
 
 .connect {
   display: grid;
@@ -301,9 +296,9 @@ navs, nav, nest
   border-width:2.5px;
   border-color:grey;
   max-height:150px;
- }
-/*social link boxes*/
-.socials {
+ } */
+/* social link boxes*/
+/* .socials {
   display: grid;
   grid-template-rows: 1fr ;
   grid-template-columns:1fr 1fr 1fr;
@@ -318,7 +313,7 @@ navs, nav, nest
     padding:10px;
     padding-top: 11px;
     margin-top: 11px;
-  }
+  } */
 
 
 
