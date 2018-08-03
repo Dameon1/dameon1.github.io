@@ -60,19 +60,19 @@ body {
   grid-area:ft;
   }  
   
-.projectContainer {
+/* .projectContainer {
   border: 2px solid black;
   margin :5px 50px;
-}  
+}   */
 
-.emailContainer {
+/* .emailContainer {
   border:1px solid black;
   margin: 20px auto;
   padding:5px;
   display:inline-block;
   width:55vw;
   height:15vh;
-}
+} */
 
 .selfPicture {
   width:65px;
@@ -166,7 +166,7 @@ a > .portfolioNav {
     background-color:lightgrey;
     align-self:end;
   }
-#about {
+.contentContainer {
   border-style: solid;
   border-width:2px;
   border-color:darkgrey;
