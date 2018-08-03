@@ -85,8 +85,7 @@ body {
   margin:3px;
 }
 .mockup{
-   width:250px;
-   height:250px;
+   width:50%;
    margin:5px auto;
 }
 img .what2eat {
@@ -95,7 +94,9 @@ img .what2eat {
   margin:100px auto;
   display:inline-block;
 }
-
+img {
+  width:100%;
+}
 
 h1 {
   Font-Family: 'Work Sans', Sans-Serif;
