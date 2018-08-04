@@ -210,6 +210,24 @@ a > .portfolioNav {
    color:white;
    background-color:#4D4D4D;
  }
+ .spanishFlashButton {
+  border:2px solid white;
+  background-color:#5555d5;
+  color:white;
+  border-radius:5px;
+  margin:5px;
+  padding:2px;
+  font-size: 1.2em;
+ }
+ .spanishFlashButton:hover {
+   border:2px solid #5555d5;
+   background-color:white;
+   color:#5555d5;
+ }
+ .spanishFlashContainer {
+   color:white;
+   background-color:#5555d5;
+ }
 
   @media only screen and (min-width: 640px) {
     body {
