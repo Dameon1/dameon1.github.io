@@ -228,7 +228,24 @@ a > .portfolioNav {
    color:white;
    background-color:#5555d5;
  }
-
+ .artOfFindingButton {
+  border:2px solid black;
+  background-color:#fffae6;
+  color:black;
+  border-radius:5px;
+  margin:5px;
+  padding:2px;
+  font-size: 1.2em;
+ }
+ .artOfFindingButton:hover {
+   border:2px solid #fffae6;
+   background-color:black;
+   color:#fffae6;
+ }
+ .artOfFindingContainer {
+    background-color:#fffae6;
+ }
+ 
   @media only screen and (min-width: 640px) {
     body {
          max-width:auto;
