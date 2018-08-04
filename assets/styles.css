@@ -39,6 +39,12 @@ body {
   border-bottom-width:1px ;
   border-color:darkgrey;
   }
+  /*assignment for the topside links*/
+.nest {
+  display:grid;
+  grid-template-rows:1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  }
 
 .about{
   display: grid;
@@ -81,8 +87,8 @@ body {
   position: absolute;
   right:0;
   bottom:0;
-  padding:3px;
-  margin:3px;
+  padding:2px;
+  margin:10px;
 }
 
 .mockup{
@@ -168,6 +174,42 @@ a > .portfolioNav {
   padding:10px;
   max-height: auto;
   }
+/* what2Eat */
+.what2eatButton {
+ border:1px solid black;
+ background-color:#8FCFDE;
+ color:black;
+ border-radius:5px;
+ margin:5px;
+ padding:5px;
+ font-size: 1.2em;
+}
+.what2eatButton:hover {
+  border:1px solid #8FCFDE;
+  background-color:black;
+  color:#8FCFDE;
+}
+.what2eatContainer {
+  background-color:#D3D4D4;
+}
+.melataButton {
+  border:2px solid black;
+  background-color:#BDD688;
+  color:black;
+  border-radius:5px;
+  margin:5px;
+  padding:2px;
+  font-size: 1.2em;
+ }
+ .melataButton:hover {
+   border:2px solid #BDD688;
+   background-color:black;
+   color:#BDD688;
+ }
+ .melataContainer {
+   color:white;
+   background-color:#4D4D4D;
+ }
 
   @media only screen and (min-width: 640px) {
     body {
@@ -274,7 +316,9 @@ a > .portfolioNav {
 /*assigned logo class to grid area header
 
 navs, nav, nest
-
+  background-color: #454545;=>black?
+  #8FCFDE=>blue
+  color:#D3D4D4;=>grey
 
 */
 /* 
