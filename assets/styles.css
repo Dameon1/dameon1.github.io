@@ -30,10 +30,19 @@ body {
 .logo {
   grid-area:hd;
   align-self:flex-end;
-} 
+  position: sticky;
+  right:0;
+  top:0;
+  z-index:2;
+  background-color:white;
+  
+ } 
 /* id="navs" class= "nest nav" */
 .nav {
   grid-area:nav;
+  position: sticky;
+  top:4.1rem;
+  z-index: 2;
   padding:10px;
   border-style: solid;
   border-bottom-width:1px ;
@@ -56,7 +65,7 @@ body {
 
 .portfolio {
   grid-area:portfolio;
-  text-align:center;
+  /* text-align:center; */
 }
 
 .contact {
@@ -154,6 +163,7 @@ a {
 /*link effect*/
 a:hover {
   color: grey;
+  cursor:pointer;
   }
 a > .portfolioNav {
   border-left: 1px solid black;
@@ -173,6 +183,13 @@ a > .portfolioNav {
   margin:25px;
   padding:10px;
   max-height: auto;
+  }
+.buttonContainer{   
+  margin: 10px auto;
+  text-align:center; 
+  }
+  .techStackText {
+    text-align:center;
   }
 /* what2Eat */
 .what2eatButton {
@@ -265,8 +282,10 @@ a > .portfolioNav {
         ;}
     #navs {
       background-color:white;
+      top:0;
+      padding-top:32px;
     }   
-    #about{
+    .about{
       margin:25px 150px;
     } 
 }

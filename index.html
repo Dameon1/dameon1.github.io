@@ -20,7 +20,7 @@
       <h1 class="header">D. Mendoza...</h1>
     </div>  
 
-    <div id="navs" class= "nest nav" role="navigation">
+    <div id="navs" class="nest nav" role="navigation">
       <div><a href="#about"><h2>Social</h2></a></div>    
       <div ><a href="#portfolio"><h2 class="portfolioNav">Portfolio</h2></a></div>
       <div><a href="#contact"><h2>Contact</h2></a></div>
@@ -28,12 +28,13 @@
 
     <div id="about" class="about contentContainer">
       <h3>Hello.</h3>
+      <img class="selfPicture" src="assets/images/self.jpg" alt="Self-Protrait">
       <p>My name is Dameon Mendoza and I am a Web Developer in the Tucson, Arizona area. I have a passion for all things in the Javascript space with a focus
         on responsive modern design. Working as a team with other developers, I have helped develop some interesting 
         projects, also some of my own personal ones along the way. Contact me for help with your next Open-Source project,
         Non-Profit start-up, or Adventurous Web Application ideas. 
       </p>
-      <img class="selfPicture" src="assets/images/self.jpg" alt="Self-Protrait">
+     
     </div>
 
     <div class="portfolio" role="main">
@@ -45,10 +46,12 @@
           On selecting a recipe you will get a soft view of the instructions and how to make the desired recipe with instructional overview.
           There is a link at the bottom of the page leading to an in-depth overview of the recipe which will lead the user to a new page where a more in-depth view of the recipe is kept.
           Created account users can keep track of saved recipes for quick access to get back to them , along with removing them if they are no longer wanted.</p>
-        <p>TECH STACK</p>
+        <p class="techStackText">TECH STACK</p>
+        <div class="buttonContainer">
         <a href="https://github.com/Dameon1/what2eat-client" target="blank"><button class="what2eatButton">Source Code-Client</button></a>
         <a href="https://github.com/Dameon1/what2eat-server" target="blank"><button class="what2eatButton">Source Code-Server</button></a>
         <a href="https://www.what2eat.website" target="blank"><button class="what2eatButton">Deployed Site</button></a>
+        </div>
         <div class="mockup">
           <img src="assets/images/w2e.PNG" alt="computer images of website">
         </div>      
@@ -90,19 +93,17 @@
          Google Maps provides the address of the gallery. The user can browse Amazon to purchase images of the art work.
       </p>
       <p>TECH STACK</p>
-      
       <a href="https://github.com/Dameon1/artFinder" target="blank"><button class="artOfFindingButton">Source Code</button></a>
       <a href="https://dameon1.github.io/artFinder/" target="blank"><button class="artOfFindingButton">Deployed Site</button></a>
-    
-    <div class="mockup">
+      <div class="mockup">
         <img src="assets/images/artOfFinding.PNG" alt="Multiple images of website">
-   </div>
+      </div>
+    </div>
   </div>
-  </div>
+
   <div id="contact" class="contact">
-    
-      <form  role='form' class="emailContainer contentContainer" aria-live="polite" method="POST" action="https://formspree.io/dameonmendoza@gmail.com">
-       
+    <form  role='form' class="emailContainer contentContainer" aria-live="polite" method="POST" action="https://formspree.io/dameonmendoza@gmail.com">
+      
         <label for="email">Your Email</label><br>
         <input type="email" name="email" placeholder="Your E-mail" aria-label="email"><br>
         
@@ -110,8 +111,7 @@
         <textarea name="message" rows='3' placeholder="Your message" type="text" aria-label="message"></textarea><br>
       
         <button class="emailButton" type="submit">Send</button>
-      </form>
-    
+    </form>    
   </div>
   <!-- <div class="socials" >
       <div>
