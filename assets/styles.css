@@ -455,7 +455,7 @@ navs, nav, nest
   max-height:150px;
  } */
 /* social link boxes*/
-/* .socials {
+ .socials {
   display: grid;
   grid-template-rows: 1fr ;
   grid-template-columns:1fr 1fr 1fr;
@@ -470,7 +470,7 @@ navs, nav, nest
     padding:10px;
     padding-top: 11px;
     margin-top: 11px;
-  } */
+  } 
 
 
 
