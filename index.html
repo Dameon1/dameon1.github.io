@@ -21,8 +21,18 @@
     </div>  
 
     <div id="navs" class="nest nav" role="navigation">
-      <div><a href="#about"><h2>Social</h2></a></div>    
-      <div ><a href="#portfolio"><h2 class="portfolioNav">Portfolio</h2></a></div>
+      <div><a href="#about"><h2>Social</h2></a></div> 
+      <div class="dropdown">
+        <h2 class="portfolioNav">
+          Portfolio
+        </h2>
+        <div class="dropdown-content">
+          <a class="portfolioLinks" href="https://www.what2eat.website" target="blank">what2eat</a>
+          <a class="portfolioLinks" href="https://the-paths.firebaseapp.com" target="blank">Melata</a>
+          <a class="portfolioLinks" href="https://forgiv.github.io/spacedRepetition-client/" target="blank">Spanish Flash</a>
+          <a class="portfolioLinks" href="https://dameon1.github.io/artFinder/" target="blank">Art of Finding</a>
+        </div>
+      </div>
       <div><a href="#contact"><h2>Contact</h2></a></div>
     </div>
 
@@ -152,3 +162,45 @@
 
 </body>
 </html>
+
+<!-- let juice = () => {
+	1. Hiding the content
+    2. decorating links
+    3. decoration on links hover
+    4. Display hidden links
+    5. decoration on initial button
+}
+
+.dropdown-portfolioLink {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-portfolioLink a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-portfolioLink a:hover {background-color: blue;}
+
+.portfolioNav:hover .dropdown-portfolioLink {display: block;}
+
+.nav:hover .portfolioLink {background-color: #3e8e41;}
+
+
+
+
+<div class="dropdown">
+  <button class="dropbtn">Dropdown</button>
+  <div class="dropdown-portfolioLink">
+    <a href="#">Link 1</a>
+    <a href="#">Link 2</a>
+    <a href="#">Link 3</a>
+  </div>
+</div> -->

@@ -176,6 +176,51 @@ a:hover {
     align-self:end;
 }
 
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color:white;
+  min-width: 32%;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  text-align:center;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block; 
+}
+
+.dropdown-content a:hover {background-color:grey;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover { 
+  background-color: black;
+  color:white
+}
+
+.portfolioLinks {
+  Font-Family: 'Work Sans', Sans-Serif;
+  text-align:center;
+  font-size: 1em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .contentContainer {
   border-style: solid;
   border-width:2px;
@@ -426,33 +471,6 @@ navs, nav, nest
     padding-top: 11px;
     margin-top: 11px;
   } */
-
-
-
-
-
-
-/*footer stylings*/
-
-/*side links styling*/
-/* .effect {
-  padding-top: 11px;
-  margin-top: 11px;
-  } */
-/*header styling*/
-
-/*Bio styling*/
-
-/* social stylings*/
-
-
-
-
-
-
-
-/*margin on portfolio @980 needs to be fixed
-*/
 
 
 
