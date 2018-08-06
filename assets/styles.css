@@ -472,9 +472,24 @@ navs, nav, nest
     margin-top: 11px;
   } 
 
-
-
-
+  .techStackContainer {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align:center;      
+    margin:0 auto;
+    }
+   .techStackCard {     
+      border:2px solid black;
+      margin:3px; 
+      
+      padding:5px;          
+    } 
+.techStackImage {
+  padding:2px;
+  width:50px;
+  height:50px;
+}
 
 
 /* 
