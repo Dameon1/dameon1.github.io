@@ -11,110 +11,9 @@ body {
   background: linear-gradient(to bottom, white 0%,#e5ebee 50%,#d7dee3 51%,#f5f7f9 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f8f9', endColorstr='#f5f7f9',GradientType=0 ); /* IE6-9 */
 }
-
-.grid {
-  display:grid;
-  grid-gap:0px;
-  grid-template-areas: "hd"
-                       "nav"
-                       "about"
-                       "portfolio"
-                       "contact"
-                       "socials"
-                       "ft";
-  align-self:stretch;
-}
-
-.logo {
-  grid-area:hd;
-  align-self:flex-end;
-  position: sticky;
-  right:0;
-  top:0;
-  z-index:2;
-  background-color:white;  
-} 
-
-.nav {
-  grid-area:nav;
-  position: sticky;
-  top:4.1rem;
-  z-index: 2;
-  padding:10px;
-  border-style: solid;
-  border-bottom-width:1px ;
-  border-color:darkgrey;
-}
- 
-.nest {
-  display:grid;
-  grid-template-rows:1fr;
-  grid-template-columns: 1fr 1fr 1fr;
-}
-
-.about {
-  display: grid;
-  grid-area:about;
-  grid-template-rows: 1fr 11fr;
-  grid-template-columns:100%;
-  position: relative;
-}
-
-.portfolio {
-  grid-area:portfolio;
-  /* text-align:center; */
-}
-
-.contact {
-  grid-area:contact;
-  margin:0 auto;
-}
-
-.socials {
-  grid-area:socials
-}
-
-.footer {
-  grid-area:ft;
-}  
-/* .emailContainer {
-  border:1px solid black;
-  margin: 20px auto;
-  padding:5px;
-  display:inline-block;
-  width:55vw;
-  height:15vh;
-} */
-
-.selfPicture {
-  width:65px;
-  height:65px;
-  border-radius:25px;
-  position: absolute;
-  right:0;
-  bottom:0;
-  padding:2px;
-  margin:10px;
-}
-
-.mockup {
-   width:50%;
-   margin:5px auto;
-}
 /* need to add class to this for the multiImages */
 img {
   width:100%;
-}
-
-.header {
-  Font-Family: 'Work Sans', Sans-Serif;
-  Font-Size: 2.8125em;  
-  padding:10px;
-  border:0;
-  text-align:left;
-  border-style:solid;
-  border-bottom-width:1px;
-  border-color:darkgrey;
 }
 /* add class for more specificity */
 h2 {
@@ -142,27 +41,66 @@ p {
   line-height:25px;
   font-size:1em;
 }
-
-.footer {
-  border-top-style:solid; border-width:7px;
-  text-align:center;border-color:grey;
-  max-height:50px;background-color:black; color:white;
-  position:fixed;
-  left:0;
-  right:0;
-  bottom:0;
-} 
-
 /*link styling*//* add class for more specificity */
 a {
   text-decoration:none;
   color:black;
 }
-
 /*link effect*/
 a:hover {
   color: grey;
   cursor:pointer;
+}
+
+.grid {
+  display:grid;
+  grid-gap:0px;
+  grid-template-areas: "hd"
+                       "nav"
+                       "about"
+                       "portfolio"
+                       "contact"
+                       "socials"
+                       "ft";
+  align-self:stretch;
+}
+/* Header styles */
+.logo {
+  grid-area:hd;
+  align-self:flex-end;
+  position: sticky;
+  right:0;
+  top:0;
+  z-index:2;
+  background-color:white;  
+} 
+
+.nav {
+  grid-area:nav;
+  position: sticky;
+  top:4.1rem;
+  z-index: 2;
+  padding:10px;
+  border-style: solid;
+  border-bottom-width:1px ;
+  border-color:darkgrey;
+}
+ 
+.nest {
+  display:grid;
+  grid-template-rows:1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.header {
+  Font-Family: 'Work Sans', Sans-Serif;
+  Font-Size: 2.8125em;  
+  padding:10px;
+  border:0;
+  text-align:left;
+  border-style:solid;
+  border-bottom-width:1px;
+  border-color:darkgrey;
 }
 
 .portfolioNav {
@@ -208,18 +146,25 @@ a:hover {
   font-size: 1em;
 }
 
+/* About Styles */
+.about {
+  display: grid;
+  grid-area:about;
+  grid-template-rows: 1fr 11fr;
+  grid-template-columns:100%;
+  position: relative;
+}
 
-
-
-
-
-
-
-
-
-
-
-
+.selfPicture {
+  width:65px;
+  height:65px;
+  border-radius:25px;
+  position: absolute;
+  right:0;
+  bottom:0;
+  padding:2px;
+  margin:10px;
+}
 
 .contentContainer {
   border-style: solid;
@@ -245,14 +190,37 @@ a:hover {
             box-shadow: 1px 3px 8px 2px rgba(0, 0, 0, 0.35);
 }
 
+/* Portfolio Section */
+
+.portfolio {
+  grid-area:portfolio;
+}
+.mockup {
+  width:50%;
+  margin:5px auto;
+}
+.techStackContainer {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align:center;      
+    margin:0 auto;
+}  
+.techStackImage {
+  margin:2px;
+  padding:2px; 
+  width:50px;
+  height:50px;
+}
 .buttonContainer {   
   margin: 10px auto;
   text-align:center; 
 }
-
 .techStackText {
   text-align:center;
 }
+
+
 /* what2Eat */
 .what2eatButton {
  border:1px solid black;
@@ -272,6 +240,8 @@ a:hover {
 .what2eatContainer {
   background-color:#D3D4D4;
 }
+
+/* Melata */
 .melataButton {
   border:2px solid black;
   background-color:#BDD688;
@@ -290,6 +260,8 @@ a:hover {
    color:white;
    background-color:#4D4D4D;
  }
+
+ /* Spanish Flash */
  .spanishFlashButton {
   border:2px solid white;
   background-color:#5555d5;
@@ -308,6 +280,20 @@ a:hover {
    color:white;
    background-color:#5555d5;
  }
+ .spanishFlashtechStackContainer {
+  display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align:center;      
+    margin:0 auto;
+    border:2px solid black;
+    width: 220px;
+    height:60px;
+    background-color:#f5f7f9;
+    border-radius:5px;
+}
+
+ /* Art of Finding */
  .artOfFindingButton {
   border:2px solid black;
   background-color:#fffae6;
@@ -325,6 +311,59 @@ a:hover {
  .artOfFindingContainer {
     background-color:#fffae6;
  }
+
+/* Contact */
+.contact {
+  grid-area:contact;
+  margin:0 auto;
+}
+
+/* .emailContainer {
+  border:1px solid black;
+  margin: 20px auto;
+  padding:5px;
+  display:inline-block;
+  width:55vw;
+  height:15vh;
+} */
+
+/* Socials */
+.socials {
+  grid-area:socials
+}
+.socials {
+  display: grid;
+  grid-template-rows: 1fr ;
+  grid-template-columns:1fr 1fr 1fr;
+  }
+#socials {
+  border-style: solid;
+  border-width:2px;
+  border-color:darkgrey;
+  text-align:center;
+  background-color:#ffffff;
+  margin:25px;
+  padding:10px;
+  padding-top: 11px;
+  margin-top: 11px;
+} 
+
+/* Footer */
+.footer {
+  grid-area:ft;
+}  
+.footer {
+  border-top-style:solid; border-width:7px;
+  text-align:center;border-color:grey;
+  max-height:50px;background-color:black; color:white;
+  position:fixed;
+  left:0;
+  right:0;
+  bottom:0;
+} 
+
+
+
  
   @media only screen and (min-width: 640px) {
     body {
@@ -455,50 +494,7 @@ navs, nav, nest
   max-height:150px;
  } */
 /* social link boxes*/
- .socials {
-  display: grid;
-  grid-template-rows: 1fr ;
-  grid-template-columns:1fr 1fr 1fr;
-  }
-  #socials {
-    border-style: solid;
-    border-width:2px;
-    border-color:darkgrey;
-    text-align:center;
-    background-color:#ffffff;
-    margin:25px;
-    padding:10px;
-    padding-top: 11px;
-    margin-top: 11px;
-  } 
 
-  .techStackContainer {
-    display:flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    text-align:center;      
-    margin:0 auto;
-    
-    }
-  
-.techStackImage {
-  margin:2px;
-  padding:2px; 
-  width:50px;
-  height:50px;
-  
-}
-.spanishFlashtechStackContainer {
-  display:flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    text-align:center;      
-    margin:0 auto;
-    border:2px solid black;
-    width: 220px;
-    height:60px;
-    background-color:#f5f7f9;
-}
 
 /* 
 TITLES
