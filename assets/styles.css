@@ -185,8 +185,8 @@ a:hover {
 .contentContainer:hover,
 .contentContainer:focus,
 .emailContainer:hover,
-.emailSendButton:focus,
-.emailSendButton:hover {
+.emailContainer:focus
+ {
     transition: 0.15s;
     transform: scale(1.01);
     -webkit-box-shadow: 1px 3px 8px 2px rgba(0, 0, 0, 0.35);
@@ -399,11 +399,13 @@ textarea::placeholder {
 {font-size:4.5em;
   margin:5px;
   color:lightgrey;
+ 
   
 
   
 }
 .tag:hover {
+  
    color:#4D4D4D;
 }
 
