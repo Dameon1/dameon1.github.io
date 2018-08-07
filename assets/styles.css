@@ -171,7 +171,8 @@ a:hover {
   border-width:2px;
   border-color:darkgrey;
   background-color:#ffffff;
-  margin:25px;
+  margin:10px;
+  margin-bottom:20px;
   padding:10px;
   max-height: auto;
   border-radius:5px;
@@ -323,7 +324,7 @@ a:hover {
 .emailContainer {
   background-color: rgba(8, 118, 243, 0.493);
   border-style: 2px solid #4D4D4D;
-  margin:15px auto; 
+  margin:20px auto; 
   width:280px;
   border-radius: 5px;
   padding:10px;
@@ -378,24 +379,34 @@ textarea::placeholder {
 
 /* Socials */
 .socials {
-  grid-area:socials
-}
-.socials {
+  grid-area:socials;
+  grid-template-rows: 1fr 11fr;
+  grid-template-columns:100%;
+  }
+.socialBoxes {
   display: grid;
   grid-template-rows: 1fr ;
   grid-template-columns:1fr 1fr 1fr;
+  margin-top: 20px;
   }
+ 
 #socials {
-  border-style: solid;
-  border-width:2px;
-  border-color:darkgrey;
-  text-align:center;
-  background-color:#ffffff;
-  margin:25px;
-  padding:10px;
-  padding-top: 11px;
-  margin-top: 11px;
+   text-align:center;
 } 
+
+
+.fab
+{font-size:4.5em;
+  margin:5px;
+  color:lightgrey;
+  
+
+  
+}
+.tag:hover {
+   color:#4D4D4D;
+}
+
 
 /* Footer */
 .footer {
@@ -436,6 +447,9 @@ textarea::placeholder {
     .contentContainer{
       margin:25px 150px;
     }
+    .socials {
+      margin:25px 200px;;
+    }
     
 }
 
@@ -467,88 +481,3 @@ textarea::placeholder {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* 
-/*image styling*/
-/* img.self {
-  max-height:200px;
-  max-width:200px;
-  float:left;
-  margin:15px;
-  padding:0px;
-  } */
-/*image styling for .tag class*/
-/* img.tag {
-  max-width:75px;
-  height:55px;
-  margin-left: 30px;
-  } */
-
-/*created a grid template for mobile with media queries at bottom of page*/
-
-
-
-/*assigned logo class to grid area header
-
-navs, nav, nest
-  background-color: #454545;=>black?
-  #8FCFDE=>blue
-  color:#D3D4D4;=>grey
-
-*/
-/* 
-
-/*assignment for the topside links*/
-
-
-/* 
-
-.connect {
-  display: grid;
-  grid-template-rows: 1fr 3fr;
-  grid-template-columns:1fr;
-	border-style:solid;
-  border-width:2.5px;
-  border-color:grey;
-  max-height:150px;
- } */
-/* social link boxes*/
-
-
-/* 
-TITLES
-Font-Family: 'Work Sans', Sans-Serif;
-Font-Size: 45px;
-
-SUB_LETTERING
-Font-Family: 'Open Sans', Sans-Serif;
-Font-Size: 15px; 
-*/ 
