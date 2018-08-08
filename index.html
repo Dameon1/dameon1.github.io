@@ -21,8 +21,11 @@
       <h1 class="header">D. Mendoza...</h1>
     </div>  
 
-    <div id="navs" class="nest nav" role="navigation">
-      <div class="dropdown"><a href="#socials"><h2>Social</h2></a>
+    <div id="navs" class="topNavContainer nav" role="navigation">
+      <div class="dropdown">
+        <a href="#socials">
+          <h2 class="topNavText">Social</h2>
+        </a>
         <div class="dropdown-content">
           <a class="portfolioLinks" href="https://www.linkedin.com/in/dameonmendoza" target="blank">linkedin</a>
           <a class="portfolioLinks" href="https://twitter.com/Dameon_H2O" target="blank">twitter</a>
@@ -30,10 +33,9 @@
         </div>
       </div> 
       <div class="dropdown">
-          <a href="#portfolioProjects">
-        <h2 class="portfolioNav">
-          Portfolio
-        </h2></a>
+        <a href="#portfolioProjects">
+          <h2 class="portfolioNav topNavText">Portfolio</h2>
+        </a>
         <div class="dropdown-content">
           <a class="portfolioLinks" href="https://www.what2eat.website" target="blank">what2eat</a>
           <a class="portfolioLinks" href="https://the-paths.firebaseapp.com" target="blank">Melata</a>
@@ -41,13 +43,17 @@
           <a class="portfolioLinks" href="https://dameon1.github.io/artFinder/" target="blank">Art of Finding</a>
         </div>
       </div>
-      <div><a href="#contact"><h2>Contact</h2></a></div>
+      <div>
+        <a href="#contact">
+          <h2 class="topNavText">Contact</h2>
+        </a>
+      </div>
     </div>
 
     <div id="about" class="about contentContainer">
-      <h3>Hello.</h3>
-      <img class="selfPicture" src="assets/images/self.jpg" alt="Self-Protrait">
-      <p>My name is Dameon Mendoza and I am a Web Developer in the Tucson, Arizona area. I have a passion for all things in the Javascript space with a focus
+      <h3 class="titleText">Hello.</h3>
+      <img class="selfPicture" src="assets/images/self.jpg" alt="Dameon Mendoza">
+      <p class="normalText">My name is Dameon Mendoza and I am a Web Developer in the Tucson, Arizona area. I have a passion for all things in the Javascript space with a focus
         on responsive modern design. Working as a team with other developers, I have helped develop some interesting 
         projects, also some of my own personal ones along the way. Contact me for help with your next Open-Source project,
         Non-Profit start-up, or Adventurous Web Application ideas by sending an email below or on your favorite mail client
@@ -56,133 +62,156 @@
     </div>
 
     <div class="portfolio" role="main" id="portfolioProjects">
-      <h3>Projects</h3>
+      <h3 class="titleText">Projects</h3>
       <div class="contentContainer what2eatContainer">
-        <h3>what2Eat</h3>
-        <p>A Recipe finder that allows users to see recipes based on the ingredients you have and lets you see how many you are missing for the particular recipe.
-          welcome page where you can make an account to get full features or continue on to the recipe finder itself for quick access.
-          On selecting a recipe you will get a soft view of the instructions and how to make the desired recipe with instructional overview.
+        <h3 class="titleText">what2Eat</h3>
+        <p class="normalText">A Recipe finder that allows users to see recipes based on the ingredients they have and lets them see how many they are missing for that particular recipe.
+          A landing page where users can make an account to get full features or continue on to the recipe finder as a guest for quick access.
+          On selecting ingredients or adding their own, a user will get images of prospective recipes.
+          They can pick from the images and will get a simple view of the instructions and how to make the desired recipe.
           There is a link at the bottom of the page leading to an in-depth overview of the recipe which will lead the user to a new page where a more in-depth view of the recipe is kept.
-          Created account users can keep track of saved recipes for quick access to get back to them , along with removing them if they are no longer wanted.</p>
+          Created account users can keep track of saved recipes for quick access to get back to them, along with removing them if they are no longer wanted.</p>
         <p class="techStackText">TECH STACK</p>
         <div class="techStackContainer">
           <div>
             <a href="https://www.mongodb.com/">
-            <img class="techStackImage" src="assets/images/mongoDB.png" alt="fix"/>
+            <img class="techStackImage" src="assets/images/mongoDB.png" alt="MongoDB Logo"/>
             </a>
           </div>
           <div>
             <a href="https://expressjs.com/">
-            <img class="techStackImage" src="assets/images/express3D.PNG" alt="fix"/>
+            <img class="techStackImage" src="assets/images/express3D.PNG" alt="Express Logo"/>
             </a>
           </div>
           <div>
             <a href="https://redux.js.org/introduction">
-            <img class="techStackImage" src="assets/images/redux.PNG" alt="fix"/>
+            <img class="techStackImage" src="assets/images/redux.PNG" alt="Redux Logo"/>
             </a>
           </div>
           <div>
             <a href="https://nodejs.org/en/">
-            <img class="techStackImage" src="assets/images/node.PNG" alt="fix"/>
+            <img class="techStackImage" src="assets/images/node.PNG" alt="Node Logo"/>
             </a>
           </div>            
         </div> 
         <div class="buttonContainer">
-          <a href="https://github.com/Dameon1/what2eat-client" target="blank"><button class="what2eatButton">Source Code-Client</button></a>
-          <a href="https://github.com/Dameon1/what2eat-server" target="blank"><button class="what2eatButton">Source Code-Server</button></a>
-          <a href="https://www.what2eat.website" target="blank"><button class="what2eatButton">Deployed Site</button></a>
+          <a href="https://github.com/Dameon1/what2eat-client" target="blank">
+            <button class="what2eatButton">Source Code-Client</button>
+          </a>
+          <a href="https://github.com/Dameon1/what2eat-server" target="blank">
+            <button class="what2eatButton">Source Code-Server</button>
+          </a>
+          <a href="https://www.what2eat.website" target="blank">
+            <button class="what2eatButton">Deployed Site</button>
+          </a>
         </div>
         <div class="mockup">
-          <img src="assets/images/w2e.PNG" alt="computer images of website">
+          <img src="assets/images/w2e.PNG" alt="images of what to eat website">
         </div>      
       </div>
 
       <div class="contentContainer melataContainer">
-        <h3>Melata</h3>
-        <p>Melata is a one stop shop for the coding newbie. 
-            It has instructional videos along with an essential IDE to code along with on the same screen. 
+        <h3 class="titleText">Melata</h3>
+        <p class="normalText">Melata is a one stop shop for the coding newbie. 
+            Designed to allow user to watch instructional videos with an IDE to code along with on the same screen. 
             Users can pick through an assortment of languages and frameworks to learn the lastest 'best-practices' in the industry.
+            Melata keeps track of a user history so they can easily pick up where they left off or choose a new path.
             Sample code is provided with each video to be able to follow along with the developer inspired instructional videos.</p>
         <p class="techStackText">TECH STACK</p>
         <div class="techStackContainer">
           <div>
-            <img class="techStackImage" src="assets/images/mongoDB.png" alt="fix"/>
-            <h3 class="techStackTitle">M</h3>
+            <img class="techStackImage" src="assets/images/mongoDB.png" alt="MongoDB Logo"/>
+            <h3 class="techStackTitle titleText">M</h3>
           </div>
           <div>
-            <img class="techStackImage" src="assets/images/express3D.PNG" alt="fix"/>
-            <h3 class="techStackTitle">E</h3>
+            <img class="techStackImage" src="assets/images/express3D.PNG" alt="Express Logo"/>
+            <h3 class="techStackTitle titleText">E</h3>
           </div>
           <div class="techStackCard">
-            <img class="techStackImage" src="assets/images/redux.PNG" alt="fix"/>
-            <h3 class="techStackTitle">R</h3>
+            <img class="techStackImage" src="assets/images/redux.PNG" alt="Redux Logo"/>
+            <h3 class="techStackTitle titleText ">R</h3>
           </div>
           <div class="techStackCard">
-            <img class="techStackImage" src="assets/images/node.PNG" alt="fix"/>
-            <h3 class="techStackTitle">N</h3>
+            <img class="techStackImage " src="assets/images/node.PNG" alt="Node Logo"/>
+            <h3 class="techStackTitle titleText">N</h3>
           </div>
         </div>
         <div class="buttonContainer">
-          <a href="https://github.com/ThePaths/client" target="blank"><button class="melataButton">Source Code-Client</button></a>
-          <a href="https://github.com/ThePaths/server" target="blank"><button class="melataButton">Source Code-Server</button></a>
-          <a href="https://the-paths.firebaseapp.com" target="blank"><button class="melataButton">Deployed Site</button></a>
+          <a href="https://github.com/ThePaths/client" target="blank">
+            <button class="melataButton">Source Code-Client</button>
+          </a>
+          <a href="https://github.com/ThePaths/server" target="blank">
+            <button class="melataButton">Source Code-Server</button>
+          </a>
+          <a href="https://the-paths.firebaseapp.com" target="blank">
+            <button class="melataButton">Deployed Site</button>
+          </a>
         </div>
         <div class="mockup">
-          <img src="assets/images/melata.PNG" alt="computer images of website">
+          <img src="assets/images/melata.PNG" alt="images of Melata website">
         </div>
       </div>
 
       <div class="contentContainer spanishFlashContainer">
-        <h3>Spanish Flash</h3>
-        <p>Spanish Flash is an app that uses a flash-card style approach to helping one learn Spanish.
+        <h3 class="titleText">Spanish Flash</h3>
+        <p class="normalText">Spanish Flash is an app that uses a flash-card style approach to helping one learn Spanish.
           The technique is backed up by the spaced repetition algorithm, which is proven to help with learning and enforcing one's understanding</p>
         <p class="techStackText">TECH STACK</p>
         <div class="spanishFlashtechStackContainer">
           <div>
-            <img class="techStackImage" src="assets/images/mongoDB.png" alt="fix"/>
-            
+            <img class="techStackImage" src="assets/images/mongoDB.png" alt="MongoDb Logo"/>
           </div>
           <div>
-            <img class="techStackImage" src="assets/images/express3D.PNG" alt="fix"/>
+            <img class="techStackImage" src="assets/images/express3D.PNG" alt="Express Logo"/>
           </div>
           <div>
-            <img class="techStackImage" src="assets/images/redux.PNG" alt="fix"/>
+            <img class="techStackImage" src="assets/images/redux.PNG" alt="Redux Logo"/>
           </div>
           <div>
-            <img class="techStackImage" src="assets/images/node.PNG" alt="fix"/>
+            <img class="techStackImage" src="assets/images/node.PNG" alt="Node Logo"/>
           </div>
         </div>
         <div class="buttonContainer">
-          <a href="https://github.com/forgiv/spacedRepetition-client" target="blank"><button class="spanishFlashButton">Source Code-Client</button></a>
-          <a href="https://github.com/Dameon1/spacedRepition-server" target="blank"><button class="spanishFlashButton">Source Code-Server</button></a>
-          <a href="https://forgiv.github.io/spacedRepetition-client/" target="blank"><button class="spanishFlashButton">Deployed Site</button></a>
+          <a href="https://github.com/forgiv/spacedRepetition-client" target="blank">
+            <button class="spanishFlashButton">Source Code-Client</button>
+          </a>
+          <a href="https://github.com/Dameon1/spacedRepition-server" target="blank">
+            <button class="spanishFlashButton">Source Code-Server</button>
+          </a>
+          <a href="https://forgiv.github.io/spacedRepetition-client/" target="blank">
+            <button class="spanishFlashButton">Deployed Site</button>
+          </a>
         </div>
         <div class="mockup">
-            <img src="assets/images/spanishFlash.PNG" alt="tablet images of website">
+            <img src="assets/images/spanishFlash.PNG" alt="tablet images of Spanish Flash website">
         </div>
       </div>
       
       <div class="contentContainer artOfFindingContainer">
-        <h3>Art of Finding</h3>
-        <p>The "Art of Finding" application allows users to search for images of historic artwork.
+        <h3 class="titleText">Art of Finding</h3>
+        <p class="normalText">The "Art of Finding" application allows users to search for images of historic artwork.
           It provides data about the work of art on a card, as well as the location of the gallery where the art work is currently on display.
           Google Maps provides the address of the gallery. The user can browse Amazon to purchase images of the art work.
         </p>
         <p class="techStackText">TECH STACK</p>
         <div class="techStackContainer">
           <div >
-            <img class="techStackImage" src="assets/images/html.PNG" alt="fix"/>
+            <img class="techStackImage" src="assets/images/html.PNG" alt="HTML5 Logo"/>
           </div>         
           <div>
-            <img class="techStackImage" src="assets/images/css3.PNG" alt="fix"/>
+            <img class="techStackImage" src="assets/images/css3.PNG" alt="CSS3 Lobo"/>
           </div>
           <div >
-            <img class="techStackImage" src="assets/images/jQuery.PNG" alt="fix"/>
+            <img class="techStackImage" src="assets/images/jQuery.PNG" alt="jQuery Logo"/>
           </div>
         </div>
         <div class="buttonContainer">
-          <a href="https://github.com/Dameon1/artFinder" target="blank"><button class="artOfFindingButton">Source Code</button></a>
-          <a href="https://dameon1.github.io/artFinder/" target="blank"><button class="artOfFindingButton">Deployed Site</button></a>
+          <a href="https://github.com/Dameon1/artFinder" target="blank">
+            <button class="artOfFindingButton">Source Code</button>
+          </a>
+          <a href="https://dameon1.github.io/artFinder/" target="blank">
+            <button class="artOfFindingButton">Deployed Site</button>
+          </a>
         </div>
         <div class="mockup">
           <img src="assets/images/artOfFinding.PNG" alt="Multiple images of website">
@@ -191,7 +220,7 @@
     </div>
 
     <div id="contact" class="contact">
-      <h3>Send me an e-mail</h3>
+      <h3 class="titleText">Send me an e-mail</h3>
       <form  role='form' class="emailContainer" aria-live="polite" method="POST" action="https://formspree.io/dameonmendoza@gmail.com">
         
           <label for="email" class='emailAddressLabel'></label><br>
@@ -204,71 +233,30 @@
       </form>    
     </div>
 
- <div class="socials">
-        <h3>Socially</h3>
-        <div class="socialBoxes" id="socials">
+    <div class="socials">
+      <h3 class="titleText">Socially</h3>
+      <div class="socialBoxes" id="socials">
         <div>
-            <span >               
-                <a href="https://github.com/Dameon1" class="fab fa-github-square tag" alt="fix" aria-label="Github"></a>
-              </span>         
+          <span>               
+            <a href="https://github.com/Dameon1" class="fab fa-github-square tag" alt="Github Logo" aria-label="Github"></a>
+          </span>         
         </div>  
         <div>
-            <span >               
-                <a href="https://www.linkedin.com/in/dameonmendoza" class="fab fa-linkedin tag" alt="fix" aria-label="LinkedIn"></a>
-              </span> 
-         </div> 
-        <div>
-            <span >                
-                <a href="https://twitter.com/Dameon_H2O" class="fab fa-twitter-square tag" alt="fix" aria-label="Twitter"></a>
-              </span>
+          <span>               
+            <a href="https://www.linkedin.com/in/dameonmendoza" class="fab fa-linkedin tag" alt="LinkedIn Logo" aria-label="LinkedIn"></a>
+          </span> 
         </div> 
-         
+        <div>
+          <span>                
+            <a href="https://twitter.com/Dameon_H2O" class="fab fa-twitter-square tag" alt="Twitter Logo" aria-label="Twitter"></a>
+          </span>
+        </div> 
+      </div>
+    </div>
     
     <div class="footer" role="contentinfo">
-        <h4>Copyright Dameon Mendoza@2018</h4>
+      <h4 class="footerText">Copyright Dameon Mendoza@2018</h4>
     </div>
   </div>
 </body>
 </html>
-
-<!-- let juice = () => {
-	1. Hiding the content
-    2. decorating links
-    3. decoration on links hover
-    4. Display hidden links
-    5. decoration on initial button
-}
-
-.dropdown-portfolioLink {
-    display: none;
-    position: absolute;
-    background-color: #f1f1f1;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-}
-
-.dropdown-portfolioLink a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
-
-.dropdown-portfolioLink a:hover {background-color: blue;}
-
-.portfolioNav:hover .dropdown-portfolioLink {display: block;}
-
-.nav:hover .portfolioLink {background-color: #3e8e41;}
-
-
-
-
-<div class="dropdown">
-  <button class="dropbtn">Dropdown</button>
-  <div class="dropdown-portfolioLink">
-    <a href="#">Link 1</a>
-    <a href="#">Link 2</a>
-    <a href="#">Link 3</a>
-  </div>
-</div> -->

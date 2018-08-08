@@ -15,41 +15,40 @@ body {
 img {
   width:100%;
 }
-/* add class for more specificity */
-h2 {
+
+a {
+  text-decoration:none;
+  color:black;
+}
+
+a:hover {  
+  cursor:pointer;
+}
+
+.topNavText {
   Font-Family: 'Work Sans', Sans-Serif;
   font-size:1.45em;
   text-align:center;
 }
-/* add class for more specificity */
-h3 {
+
+.titleText {
   Font-Family: 'Work Sans', Sans-Serif;
   font-size:1.45em;
   text-align:center;
 }
-/* add class for more specificity */
-h4 {
+
+.footerText {
   font-size: 1.15em;
   text-align:center;
 }
-/* add class for more specificity */
-p {
+
+p.normalText {
   Font-Family: 'Open Sans', Sans-Serif;
   margin:10px;
   padding:2px;
   word-spacing:5px;
   line-height:25px;
   font-size:1em;
-}
-/*link styling*//* add class for more specificity */
-a {
-  text-decoration:none;
-  color:black;
-}
-/*link effect*/
-a:hover {
-  color: grey;
-  cursor:pointer;
 }
 
 .grid {
@@ -64,7 +63,7 @@ a:hover {
                        "ft";
   align-self:stretch;
 }
-/* Header styles */
+/*-- Header styles --*/
 .logo {
   grid-area:hd;
   align-self:flex-end;
@@ -86,7 +85,7 @@ a:hover {
   border-color:darkgrey;
 }
  
-.nest {
+.topNavContainer {
   display:grid;
   grid-template-rows:1fr;
   grid-template-columns: 1fr 1fr 1fr;
@@ -108,7 +107,7 @@ a:hover {
   border-right: 1px solid black;
 }  
 
-/*nav styling*/
+/*-- nav styling --*/
 #navs {
     background-color:lightgrey;
     align-self:end;
@@ -146,7 +145,7 @@ a:hover {
   font-size: 1em;
 }
 
-/* About Styles */
+/*-- About Styles --*/
 .about {
   display: grid;
   grid-area:about;
@@ -183,10 +182,7 @@ a:hover {
 }
 
 .contentContainer:hover,
-.contentContainer:focus,
-.emailContainer:hover,
-.emailContainer:focus
- {
+.contentContainer:focus {
     transition: 0.15s;
     transform: scale(1.01);
     -webkit-box-shadow: 1px 3px 8px 2px rgba(0, 0, 0, 0.35);
@@ -194,36 +190,39 @@ a:hover {
             box-shadow: 1px 3px 8px 2px rgba(0, 0, 0, 0.35);
 }
 
-/* Portfolio Section */
-
+/*-- Portfolio Section --*/
 .portfolio {
   grid-area:portfolio;
 }
+
 .mockup {
   width:50%;
   margin:5px auto;
 }
+
 .techStackContainer {
     display:flex;
     flex-wrap: wrap;
     justify-content: center;
     text-align:center;      
     margin:0 auto;
-}  
+} 
+
 .techStackImage {
   margin:2px;
   padding:2px; 
   width:50px;
   height:50px;
 }
+
 .buttonContainer {   
   margin: 10px auto;
   text-align:center; 
 }
+
 .techStackText {
   text-align:center;
 }
-
 
 /* what2Eat */
 .what2eatButton {
@@ -329,8 +328,17 @@ a:hover {
   border-radius: 5px;
   padding:10px;
   font-size: 28px;
-  
-} 
+}
+
+.emailContainer:hover,
+.emailContainer:focus
+ {
+    transition: 0.15s;
+    transform: scale(1.01);
+    -webkit-box-shadow: 1px 3px 8px 2px rgba(0, 0, 0, 0.35);
+       -moz-box-shadow: 1px 3px 8px 2px rgba(0, 0, 0, 0.35);
+            box-shadow: 1px 3px 8px 2px rgba(0, 0, 0, 0.35);
+ }
 
 .emailAddressInput, 
 .emailMessageInput {
