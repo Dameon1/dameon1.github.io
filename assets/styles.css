@@ -32,8 +32,9 @@ a:hover {
 }
 
 .titleText {
-  Font-Family: 'Work Sans', Sans-Serif;
-  font-size:1.45em;
+  font-Family: 'Work Sans', Sans-Serif;
+  font-size:1.9em;
+  font-weight:bold;
   text-align:center;
 }
 
@@ -130,23 +131,27 @@ p.normalText {
 }
 
 /*-- About Styles --*/
-.about {
+/* .about {
   display: grid;
   grid-area:about;
-  grid-template-rows: 1fr 11fr;
+  grid-template-rows: 1fr 5fr;
   grid-template-columns:100%;
   position: relative;
+} */
+.about {
+  grid-area:about;
+  grid-template-rows: 1fr 5fr;
+  grid-template-columns:100%;
 }
 
 .selfPicture {
   width:65px;
   height:65px;
   border-radius:25px;
-  position:absolute;
-  right:0px;
-  bottom:0;
+  display:block;
+  
   padding:2px;
-  margin:5px;
+  margin:10px auto;
 }
 
 .contentContainer {
@@ -205,17 +210,20 @@ p.normalText {
 }
 
 .techStackText {
-  text-align:center;
+  font-Family: 'Open Sans', Sans-Serif;
+  font-size: 1.2em;
+  font-weight: 500;
+  text-align: center;
 }
 
 /* what2Eat */
 .what2eatButton {
  border:1px solid black;
- background-color:#8FCFDE;
- color:black;
- border-radius:5px;
- margin:5px;
- padding:5px;
+ background-color: #8FCFDE;
+ color: black;
+ border-radius: 5px;
+ margin: 5px;
+ padding: 5px;
  font-size: 1.2em;
 }
 .what2eatButton:hover {
@@ -387,7 +395,7 @@ textarea::placeholder {
 
 
 .fab {
-  font-size:4.5em;
+  font-size:3.5em;
   margin:5px;
   color:lightgrey;  
 }
