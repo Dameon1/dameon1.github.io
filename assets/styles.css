@@ -123,8 +123,6 @@ p.normalText {
   text-align:center;
 }
 
-
-
 .portfolioLinks {
   Font-Family: 'Work Sans', Sans-Serif;
   text-align:center;
@@ -144,11 +142,11 @@ p.normalText {
   width:65px;
   height:65px;
   border-radius:25px;
-  position: absolute;
-  right:0;
+  position:absolute;
+  right:0px;
   bottom:0;
   padding:2px;
-  margin:10px;
+  margin:5px;
 }
 
 .contentContainer {
@@ -182,7 +180,7 @@ p.normalText {
 }
 
 .mockup {
-  width:50%;
+  width:40%;
   margin:5px auto;
 }
 
@@ -237,13 +235,14 @@ p.normalText {
   color:black;
   border-radius:5px;
   margin:5px;
-  padding:2px;
+  padding:5px;
   font-size: 1.2em;
  }
  .melataButton:hover {
    border:2px solid #BDD688;
    background-color:black;
    color:#BDD688;
+   cursor:pointer;
  }
  .melataContainer {
    color:white;
@@ -257,13 +256,14 @@ p.normalText {
   color:white;
   border-radius:5px;
   margin:5px;
-  padding:2px;
+  padding:5px;
   font-size: 1.2em;
  }
  .spanishFlashButton:hover {
    border:2px solid #5555d5;
    background-color:white;
    color:#5555d5;
+   cursor:pointer;
  }
  .spanishFlashContainer {
    color:white;
@@ -289,13 +289,14 @@ p.normalText {
   color:#4D4D4D;
   border-radius:5px;
   margin:5px;
-  padding:2px;
+  padding:5px;
   font-size: 1.2em;
  }
  .artOfFindingButton:hover {
    border:2px solid #fffae6;
    background-color:#4D4D4D;
    color:#fffae6;
+   cursor:pointer;
  }
  .artOfFindingContainer {
     background-color:#fffae6;
@@ -400,6 +401,7 @@ textarea::placeholder {
   grid-area:ft;
 }  
 .footer {
+  font-Family: 'Open Sans', Sans-Serif;
   border-top-style:solid; border-width:7px;
   text-align:center;border-color:grey;
   max-height:50px;background-color:black; color:white;
@@ -407,6 +409,8 @@ textarea::placeholder {
   left:0;
   right:0;
   bottom:0;
+  padding:2px;
+  font-size:.9em;
 } 
  
 @media only screen and (min-width: 640px) {
