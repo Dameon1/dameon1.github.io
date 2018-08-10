@@ -5,30 +5,118 @@
 
 body {
   margin-bottom: 65px;
-  background: #f6f8f9; /* Old browsers */
+  background: #f6f8f9; 
   background: -moz-linear-gradient(top, white 0%, #e5ebee 50%, #d7dee3 51%, #f5f7f9 100%); /* FF3.6-15 */
   background: -webkit-linear-gradient(top, white 0%,#e5ebee 50%,#d7dee3 51%,#f5f7f9 100%); /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(to bottom, white 0%,#e5ebee 50%,#d7dee3 51%,#f5f7f9 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f8f9', endColorstr='#f5f7f9',GradientType=0 ); /* IE6-9 */
 }
-/* need to add class to this for the multiImages */
-img {
-  width:100%;
+
+/* Page Layout */
+.grid {
+    display:grid;
+    grid-gap:0px;
+    grid-template-areas: "hd"
+                         "nav"
+                         "about"
+                         "portfolio"
+                         "contact"
+                         "socials"
+                         "ft";
+    align-self:stretch;
 }
 
-a {
-  text-decoration:none;
-  color:black;
+/* Top-Level Heading Section */
+.logo {
+  grid-area:hd;
+  align-self:flex-end;
+  position: sticky;
+  right:0;
+  top:0;
+  z-index:2;
+  background-color:white;  
 }
 
-a:hover {  
-  cursor:pointer;
+.nav {
+  grid-area:nav;
+  position: sticky;
+  top:4.1rem;
+  z-index: 2;
+  color:#4D4D4D;
+  font-weight:550;
+  padding:10px;
+  border-style: solid;
+  border-bottom-width:1px ;
+  border-color:darkgrey;
+}
+
+.topNavContainer {
+  display:grid;
+  grid-template-rows:1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.header {
+  Font-Family: 'Work Sans', Sans-Serif;
+  Font-Size: 2.8125em;
+  font-weight:550;  
+  padding:10px;
+  border:0;
+  color:#4D4D4D;
+  text-align:left;
+  border-style:solid;
+  border-bottom-width:1px;
+  border-color:darkgrey;
+}  
+
+/*-- nav styling --*/
+#navs {
+    background-color:lightgrey;
+    align-self:end;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  font-weight:550; 
+  background-color:white;
+  min-width: 32%;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  text-align:center;
+}
+
+.portfolioLinks {
+  Font-Family: 'Work Sans', Sans-Serif;
+  text-align:center;
+  font-size: 1em;
 }
 
 .topNavText {
   Font-Family: 'Work Sans', Sans-Serif;
   font-size:1.45em;
   text-align:center;
+}
+
+.portfolioNav {
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+} 
+
+/* General Body Styles */
+.contentContainer {
+  border: 1px solid whitesmoke;
+  color:white;
+  background-color:#4D4D4D;  
+  margin:10px;
+  margin-bottom:20px;
+  padding:10px;
+  max-height: auto;
+  border-radius:5px;
+  transition: 0.15s;
+  -webkit-box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.3);
+     -moz-box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.3);
+          box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.3);
 }
 
 .sectionHeader {
@@ -58,121 +146,6 @@ p.normalText {
   word-spacing:5px;
   line-height:25px;
   font-size:1em;
-}
-
-.grid {
-  display:grid;
-  grid-gap:0px;
-  grid-template-areas: "hd"
-                       "nav"
-                       "about"
-                       "portfolio"
-                       "contact"
-                       "socials"
-                       "ft";
-  align-self:stretch;
-}
-/*-- Header styles --*/
-.logo {
-  grid-area:hd;
-  align-self:flex-end;
-  position: sticky;
-  right:0;
-  top:0;
-  z-index:2;
-  background-color:white;  
-} 
-
-.nav {
-  grid-area:nav;
-  position: sticky;
-  top:4.1rem;
-  z-index: 2;
-  padding:10px;
-  border-style: solid;
-  border-bottom-width:1px ;
-  border-color:darkgrey;
-}
- 
-.topNavContainer {
-  display:grid;
-  grid-template-rows:1fr;
-  grid-template-columns: 1fr 1fr 1fr;
-}
-
-.header {
-  Font-Family: 'Work Sans', Sans-Serif;
-  Font-Size: 2.8125em;  
-  padding:10px;
-  border:0;
-  text-align:left;
-  border-style:solid;
-  border-bottom-width:1px;
-  border-color:darkgrey;
-}
-
-.portfolioNav {
-  border-left: 1px solid black;
-  border-right: 1px solid black;
-}  
-
-/*-- nav styling --*/
-#navs {
-    background-color:lightgrey;
-    align-self:end;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color:white;
-  min-width: 32%;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-  text-align:center;
-}
-
-.portfolioLinks {
-  Font-Family: 'Work Sans', Sans-Serif;
-  text-align:center;
-  font-size: 1em;
-}
-
-.about {
-  grid-area:about;
-  grid-template-rows: 1fr 5fr;
-  grid-template-columns:100%;
-}
-
-.selfPicture {
-  width:65px;
-  height:65px;
-  border-radius:25px;
-  display:block;
-  
-  padding:2px;
-  margin:10px auto;
-}
-
-.contentContainer {
-  border: 2px solid darkgrey;
-  color:white;
-  background-color:#4D4D4D;
-  
-  margin:10px;
-  margin-bottom:20px;
-  padding:10px;
-  max-height: auto;
-  border-radius:5px;
-  transition: 0.15s;
-  -webkit-box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.3);
-     -moz-box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.3);
-          box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.3);
-}
-
-/*-- Portfolio Section --*/
-.portfolio {
-  grid-area:portfolio;
 }
 
 .mockup {
@@ -208,9 +181,6 @@ p.normalText {
   padding:5px;
 }
 
-
-
-/*-- Projects --*/
 .projectButtons {
   border:2px solid #4D4D4D;
   background-color:#f5f7f9;
@@ -219,31 +189,50 @@ p.normalText {
   margin:5px;
   padding:5px;
   font-size: 1.2em;
- }
+}
 
-.emailSendButton:focus,
-.emailSendButton:hover,
 .projectButtons:hover {
     color:#f5f7f9;
     background-color:#4D4D4D;
     border: solid 2px #f5f7f9;
     cursor:pointer;
- }
+}
 
-/*-- Contact --*/
+/* About Section */
+.about {
+  grid-area:about;
+  grid-template-rows: 1fr 5fr;
+  grid-template-columns:100%;
+}
+
+.selfPicture {
+  width:65px;
+  height:65px;
+  border-radius:25px;
+  display:block;  
+  padding:2px;
+  margin:10px auto;
+}
+
+/*-- Portfolio Section --*/
+.portfolio {
+  grid-area:portfolio;
+}
+
+/*-- Contact Section--*/
 .contact {
   grid-area:contact;
 }
 
+/* Email Section */
 .emailContainer {
   background-color: #4D4D4D;
-  border-style: 2px solid #4D4D4D;
+  border: 1px solid whitesmoke;
   margin:20px auto; 
   width:280px;
   border-radius: 5px;
   padding:10px;
-  font-size: 28px;
-  border: 2px solid darkgrey;
+  font-size: 28px;  
   transition: 0.15s;
   -webkit-box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.3);
      -moz-box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.3);
@@ -279,6 +268,7 @@ p.normalText {
   -moz-box-shadow: 0.5px 1px 8px 1px rgba(0, 0, 0, 0.25);
        box-shadow: 0.5px 1px 8px 1px rgba(0, 0, 0, 0.25);
 }
+
 .emailSendButton:focus,
 .emailSendButton:hover {
   cursor:pointer;
@@ -292,18 +282,18 @@ textarea::placeholder {
   color: #4D4D4D;
 }
 
-/*-- Socials --*/
+/*-- Social Icon Section --*/
 .socials {
   grid-area:socials;
   grid-template-rows: 1fr 4fr 1fr;
   grid-template-columns:100%;
-  }
+}
 .socialBoxes {
   display: grid;
   grid-template-rows: 1fr ;
   grid-template-columns:1fr 1fr 1fr;
   margin-top: 20px;
-  }
+}
  
 #socials {
    text-align:center;
@@ -312,10 +302,9 @@ textarea::placeholder {
 .emailLinkText {
   font-Family: 'Work Sans', Sans-Serif;
   font-size:1.8em;
-  font-weight:6;
+  font-weight:600;
   text-align:center;
   padding-top:40px;
-
 }
 
 .fab {
@@ -328,10 +317,12 @@ textarea::placeholder {
    color:#4D4D4D;
 }
 
-/* Footer */
+/* Footer Section */
+
 .footer {
   grid-area:ft;
-}  
+}
+
 .footer {
   font-Family: 'Open Sans', Sans-Serif;
   border-top-style:solid; border-width:7px;
@@ -345,6 +336,20 @@ textarea::placeholder {
   font-size:.9em;
 } 
  
+img {
+  width:100%;
+  }
+
+a {
+  text-decoration:none;
+  color:black;
+  }
+
+a:hover {  
+  cursor:pointer;
+  }
+
+/* Media Queries for Screens Above 640px */
 @media only screen and (min-width: 640px) {
     body {
          max-width:auto;
@@ -361,7 +366,7 @@ textarea::placeholder {
                             "contact contact"
                             "socials socials"
                             "ft ft"
-        ;}
+        }
     #navs {
       background-color:white;
       top:0;
@@ -372,8 +377,7 @@ textarea::placeholder {
     }
     .socials {
       margin:25px 200px;;
-    }
-    
+    }    
 }
 
 @media only screen and (min-width: 980px){
@@ -396,10 +400,11 @@ textarea::placeholder {
       text-decoration: none;
       display: block; 
       border-top:solid .5px black;
-    }
-        
+    }        
     .dropdown-content a:hover {background-color:grey;color:white;}
-        
     .dropdown:hover .dropdown-content {display: block;}
-           
+    
+}
+li {
+  list-style:none;
 }

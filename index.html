@@ -21,49 +21,60 @@
       <h1 class="header">D. Mendoza</h1>
     </div>  
 
-    <div id="navs" class="topNavContainer nav" role="navigation">
-      <div class="dropdown">
-        <a href="#socials">
-          <h2 class="topNavText">Social</h2>
-        </a>
-        <div class="dropdown-content">
-          <a class="portfolioLinks" href="https://www.linkedin.com/in/dameonmendoza" target="blank">linkedin</a>
-          <a class="portfolioLinks" href="https://twitter.com/Dameon_H2O" target="blank">twitter</a>
-          <a class="portfolioLinks" href="https://github.com/Dameon1" target="blank">github</a>
-        </div>
-      </div> 
-      <div class="dropdown">
-        <a href="#portfolioProjects">
-          <h2 class="portfolioNav topNavText">Portfolio</h2>
-        </a>
-        <div class="dropdown-content">
-          <a class="portfolioLinks" href="https://www.what2eat.website" target="blank">what2eat</a>
-          <a class="portfolioLinks" href="https://the-paths.firebaseapp.com" target="blank">Melata</a>
-          <a class="portfolioLinks" href="https://forgiv.github.io/spacedRepetition-client/" target="blank">Spanish Flash</a>
-          <a class="portfolioLinks" href="https://dameon1.github.io/artFinder/" target="blank">Art of Finding</a>
-        </div>
-      </div>
-      <div>
-        <a href="#contact">
-          <h2 class="topNavText">Contact</h2>
-        </a>
-      </div>
-    </div>
+    <nav id="navs" class="topNavContainer nav" role="navigation">
+      <ul class="dropdown">
+        <li class="topNavText ">
+          <a href="#socials">Social</a>
+        </li>
+        <ul class="dropdown-content">
+          <li>
+            <a class="portfolioLinks" href="https://www.linkedin.com/in/dameonmendoza" target="blank">linkedin</a>
+          </li> 
+          <li>
+            <a class="portfolioLinks" href="https://twitter.com/Dameon_H2O" target="blank">twitter</a>
+          </li> 
+          <li>
+            <a class="portfolioLinks" href="https://github.com/Dameon1" target="blank">github</a>
+          </li> 
+        </ul>
+      </ul> 
+      <ul class="dropdown">
+        <li class="portfolioNav topNavText">
+          <a href="#portfolioProjects">Portfolio</a>
+        </li>
+          <ul class="dropdown-content">
+          <li>
+            <a class="portfolioLinks" href="https://www.what2eat.website" target="blank">what2eat</a>
+          </li> 
+          <li>
+            <a class="portfolioLinks" href="https://the-paths.firebaseapp.com" target="blank">Melata</a>
+          </li> 
+          <li>
+            <a class="portfolioLinks" href="https://forgiv.github.io/spacedRepetition-client/" target="blank">Spanish Flash</a>
+          </li> 
+          <li>
+            <a class="portfolioLinks" href="https://dameon1.github.io/artFinder/" target="blank">Art of Finding</a>
+          </li> 
+        </ul>
+      </ul>
+      <ul>
+        <li class="topNavText">
+          <a href="#contact">Contact</a>
+        </li>
+      </ul>
+    </nav>
 
     <div id="about" class="about ">
-        <img class="selfPicture" src="assets/images/self.jpg" alt="Photo of Dameon Mendoza">
+      <img class="selfPicture" src="assets/images/self.jpg" alt="Photo of Dameon Mendoza">
       <div class="contentContainer">          
         <h3 class="titleText">Hello.</h3>
-      
-    
-      <p class="normalText">My name is Dameon Mendoza and I am a Web Developer in the Tucson, Arizona area. I have a passion for all things in the Javascript space with a focus
-        on responsive modern design. Working as a team with other developers, I have helped develop some interesting 
-        projects, also some of my own personal ones along the way. Contact me for help with your next Open-Source project,
-        Non-Profit start-up, or Adventurous Web Application ideas by sending an email below or on your favorite mail client
-        at dameonmendoza@gmail.com.
-        
-      </p>
-    </div>     
+        <p class="normalText">My name is Dameon Mendoza and I am a Web Developer in the Tucson, Arizona area. I have a passion for all things in the Javascript space with a focus
+            on responsive modern design. Working as a team with other developers, I have helped develop some interesting 
+            projects, also some of my own personal ones along the way. Contact me for help with your next Open-Source project,
+            Non-Profit start-up, or Adventurous Web Application ideas by sending an email below or on your favorite mail client
+            at dameonmendoza@gmail.com.
+        </p>  
+      </div>     
     </div>
 
     <div class="portfolio" role="main" id="portfolioProjects">
@@ -78,26 +89,18 @@
           Created account users can keep track of saved recipes for quick access to get back to them, along with removing them if they are no longer wanted.</p>
         <p class="techStackText">TECH STACK</p>
         <div class="techStackContainer">
-          <div>
-            <a href="https://www.mongodb.com/">
+          <a href="https://www.mongodb.com/">
             <img class="techStackImage" src="assets/images/mongoDB.png" alt="MongoDB Logo"/>
-            </a>
-          </div>
-          <div>
-            <a href="https://expressjs.com/">
+          </a>
+          <a href="https://expressjs.com/">
             <img class="techStackImage" src="assets/images/express3D.PNG" alt="Express Logo"/>
-            </a>
-          </div>
-          <div>
-            <a href="https://redux.js.org/introduction">
+          </a>
+          <a href="https://redux.js.org/introduction">
             <img class="techStackImage" src="assets/images/redux.PNG" alt="Redux Logo"/>
-            </a>
-          </div>
-          <div>
-            <a href="https://nodejs.org/en/">
+          </a>
+          <a href="https://nodejs.org/en/">
             <img class="techStackImage" src="assets/images/node.PNG" alt="Node Logo"/>
-            </a>
-          </div>            
+          </a>                     
         </div> 
         <div class="buttonContainer">
           <a href="https://github.com/Dameon1/what2eat-server" target="blank">
@@ -105,8 +108,7 @@
           </a>
           <a href="https://github.com/Dameon1/what2eat-client" target="blank">
             <button class="projectButtons">Source Code-Client</button>
-          </a>
-          
+          </a>          
           <a href="https://www.what2eat.website" target="blank">
             <button class="projectButtons">Deployed Site</button>
           </a>
@@ -120,31 +122,23 @@
         <h3 class="titleText">Melata</h3>
         <p class="normalText">Melata is a one stop shop for the coding newbie. 
             Designed to allow a user to watch instructional videos with an IDE to code along with on the same screen. 
-            Users can pick through an assortment of languages and frameworks to learn the lastest 'best-practices' in the industry.
+            Users can pick through an assortment of languages and frameworks to learn the latest 'best-practices' in the industry.
             Melata keeps track of a user history so they can easily pick up where they left off or choose a new path.
             Sample code is provided with each video to be able to follow along with the developer inspired instructional videos.</p>
         <p class="techStackText">TECH STACK</p>
-        <div class="techStackContainer">
-          <div>
-            <a href="https://www.mongodb.com/">
-              <img class="techStackImage" src="assets/images/mongoDB.png" alt="MongoDB Logo"/>
-            </a>
-          </div>
-          <div>
-            <a href="https://expressjs.com/">
-              <img class="techStackImage" src="assets/images/express3D.PNG" alt="Express Logo"/>
-            </a>
-          </div>
-          <div class="techStackCard">
-            <a href="https://redux.js.org/introduction">
-              <img class="techStackImage" src="assets/images/redux.PNG" alt="Redux Logo"/>
-            </a>
-          </div>
-          <div class="techStackCard">
-            <a href="https://nodejs.org/en/">
-              <img class="techStackImage" src="assets/images/node.PNG" alt="Node Logo"/>
-            </a>            
-          </div>
+        <div class="techStackContainer">          
+          <a href="https://www.mongodb.com/">
+            <img class="techStackImage" src="assets/images/mongoDB.png" alt="MongoDB Logo"/>
+          </a>       
+          <a href="https://expressjs.com/">
+            <img class="techStackImage" src="assets/images/express3D.PNG" alt="Express Logo"/>
+          </a>        
+          <a href="https://redux.js.org/introduction">
+            <img class="techStackImage" src="assets/images/redux.PNG" alt="Redux Logo"/>
+          </a>        
+          <a href="https://nodejs.org/en/">
+            <img class="techStackImage" src="assets/images/node.PNG" alt="Node Logo"/>
+          </a>         
         </div>
         <div class="buttonContainer">
           <a href="https://github.com/ThePaths/server" target="blank">
@@ -165,30 +159,22 @@
       <div class="contentContainer">
         <h3 class="titleText">Spanish Flash</h3>
         <p class="normalText">Spanish Flash is an learning application that uses a flash-card style approach to helping one learn Spanish.
-          Spanish Flash uses the spaced repetition algorithm, which is proven to help with learning and re-enforcing one's understanding and 
+          Spanish Flash uses the spaced repetition algorithm, which is proven to help with learning and reinforcing one's understanding and 
           cognitive abilities in the field of study.</p>
         <p class="techStackText">TECH STACK</p>
-        <div class="techStackContainer">
-          <div>
-            <a href="https://www.mongodb.com/">
-              <img class="techStackImage" src="assets/images/mongoDB.png" alt="MongoDB Logo"/>
-            </a>
-          </div>
-          <div>
-            <a href="https://expressjs.com/">
-              <img class="techStackImage" src="assets/images/express3D.PNG" alt="Express Logo"/>
-            </a>
-          </div>
-          <div>
-            <a href="https://redux.js.org/introduction">
-              <img class="techStackImage" src="assets/images/redux.PNG" alt="Redux Logo"/>
-            </a>
-          </div>
-          <div>
-            <a href="https://nodejs.org/en/">
-              <img class="techStackImage" src="assets/images/node.PNG" alt="Node Logo"/>
-            </a>
-          </div>
+        <div class="techStackContainer">         
+          <a href="https://www.mongodb.com/">
+            <img class="techStackImage" src="assets/images/mongoDB.png" alt="MongoDB Logo"/>
+          </a>         
+          <a href="https://expressjs.com/">
+            <img class="techStackImage" src="assets/images/express3D.PNG" alt="Express Logo"/>
+          </a>         
+          <a href="https://redux.js.org/introduction">
+            <img class="techStackImage" src="assets/images/redux.PNG" alt="Redux Logo"/>
+          </a>         
+          <a href="https://nodejs.org/en/">
+            <img class="techStackImage" src="assets/images/node.PNG" alt="Node Logo"/>
+          </a>         
         </div>
         <div class="buttonContainer">
           <a href="https://github.com/Dameon1/spacedRepition-server" target="blank">
@@ -202,7 +188,7 @@
           </a>
         </div>
         <div class="mockup">
-            <img src="assets/images/spanishFlashImage.PNG" alt="tablet images of Spanish Flash website">
+          <img src="assets/images/spanishFlashImage.PNG" alt="tablet images of Spanish Flash website">
         </div>
       </div>
       
@@ -210,25 +196,19 @@
         <h3 class="titleText">Art of Finding</h3>
         <p class="normalText">The Art of Finding application allows users to search for images of historic artwork.
           It provides data about the work of art on a card, as well as the location of the gallery where the art work is currently on display.
-          Google Maps provides the address of the gallery. The user can browse Amazon to purchase images of the art work.
+          Google Maps provides the address of the gallery. The user can browse Amazon to purchase images of the artwork.
         </p>
         <p class="techStackText">TECH STACK</p>
-        <div class="techStackContainer">
-          <div>
+        <div class="techStackContainer">         
               <a href="https://www.w3.org/Style/CSS/Overview.en.html" target="blank">
                 <img class="techStackImage" src="assets/images/css3.PNG" alt="CSS3 Logo"/>
-              </a>            
-          </div>
-          <div >
+              </a>       
             <a href="https://www.w3.org/" target="blank">
               <img class="techStackImage" src="assets/images/html.PNG" alt="HTML5 Logo"/>
-            </a>            
-          </div>        
-          <div>
+            </a>       
             <a href="https://jquery.com/" target="blank">
               <img class="techStackImage" src="assets/images/jQuery.PNG" alt="jQuery Logo"/>
-            </a>
-          </div>
+            </a>         
         </div>
         <div class="buttonContainer">
           <a href="https://github.com/Dameon1/artFinder" target="blank">
@@ -261,34 +241,17 @@
     <div class="socials">
       <h3 class="sectionHeader">Socially</h3>
       <div class="socialBoxes" id="socials">
-        <div>
-          <span>               
-            <a href="https://github.com/Dameon1" class="fab fa-github-square tag" alt="Github Logo" aria-label="Github"></a>
-          </span>         
-        </div>  
-        <div>
-          <span>               
-            <a href="https://www.linkedin.com/in/dameonmendoza" class="fab fa-linkedin tag" alt="LinkedIn Logo" aria-label="LinkedIn"></a>
-          </span> 
-        </div> 
-        <div>
-          <span>                
-            <a href="https://twitter.com/Dameon_H2O" class="fab fa-twitter-square tag" alt="Twitter Logo" aria-label="Twitter"></a>
-          </span>
-        </div>
+        <a href="https://github.com/Dameon1" class="fab fa-github-square tag" alt="Github Logo" aria-label="Github"></a>
+        <a href="https://www.linkedin.com/in/dameonmendoza" class="fab fa-linkedin tag" alt="LinkedIn Logo" aria-label="LinkedIn"></a>
+        <a href="https://twitter.com/Dameon_H2O" class="fab fa-twitter-square tag" alt="Twitter Logo" aria-label="Twitter"></a>
       </div>
-      
-                   
-            <a href="https://mail.google.com" aria-label="Email">
-              <h3 class="emailLinkText">dameonmendoza@gmail.com</h3></a>
-         
-             
-      
+      <h3 class="emailLinkText"><a href="https://mail.google.com" aria-label="Email" target="blank">dameonmendoza@gmail.com</a></h3>
     </div>
     
     <div class="footer" role="contentinfo">
       <h4 class="footerText">Copyright DameonMendoza@2018</h4>
     </div>
   </div>
+  
 </body>
 </html>
