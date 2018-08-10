@@ -249,7 +249,7 @@ p.normalText {
   font-size: 1.1rem;
   width:100%;
   outline: none;
-  border: solid 1px darkgrey;
+  border: solid 1px white;
   border-radius:4px;
   background-color:#f5f7f9;
  }
