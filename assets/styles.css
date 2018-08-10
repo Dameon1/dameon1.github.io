@@ -138,14 +138,6 @@ p.normalText {
   font-size: 1em;
 }
 
-/*-- About Styles --*/
-/* .about {
-  display: grid;
-  grid-area:about;
-  grid-template-rows: 1fr 5fr;
-  grid-template-columns:100%;
-  position: relative;
-} */
 .about {
   grid-area:about;
   grid-template-rows: 1fr 5fr;
@@ -163,10 +155,10 @@ p.normalText {
 }
 
 .contentContainer {
-  border-style: solid;
-  border-width:2px;
-  border-color:darkgrey;
-  background-color:#ffffff;
+  border: 2px solid darkgrey;
+  color:white;
+  background-color:#4D4D4D;
+  
   margin:10px;
   margin-bottom:20px;
   padding:10px;
@@ -177,15 +169,6 @@ p.normalText {
      -moz-box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.3);
           box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.3);
 }
-
-/* .contentContainer:hover,
-.contentContainer:focus {
-    transition: 0.15s;
-    transform: scale(1.01);
-    -webkit-box-shadow: 1px 3px 8px 2px rgba(0, 0, 0, 0.35);
-       -moz-box-shadow: 1px 3px 8px 2px rgba(0, 0, 0, 0.35);
-            box-shadow: 1px 3px 8px 2px rgba(0, 0, 0, 0.35);
-} */
 
 /*-- Portfolio Section --*/
 .portfolio {
@@ -225,98 +208,26 @@ p.normalText {
   padding:5px;
 }
 
-/* what2Eat */
-.what2eatButton {
- border:1px solid black;
- background-color: #8FCFDE;
- color: black;
- border-radius: 5px;
- margin: 5px;
- padding: 5px;
- font-size: 1.2em;
-}
-.what2eatButton:hover {
-  border:1px solid #8FCFDE;
-  background-color:black;
-  color:#8FCFDE;
-  cursor:pointer;
-}
-.what2eatContainer {
-  background-color:#D3D4D4;
-}
 
-/*-- Melata --*/
-.melataButton {
-  border:2px solid black;
-  background-color:#BDD688;
-  color:black;
-  border-radius:5px;
-  margin:5px;
-  padding:5px;
-  font-size: 1.2em;
- }
- .melataButton:hover {
-   border:2px solid #BDD688;
-   background-color:black;
-   color:#BDD688;
-   cursor:pointer;
- }
- .melataContainer {
-   color:white;
-   background-color:#4D4D4D;
- }
 
- /*-- Spanish Flash --*/
- .spanishFlashButton {
-  border:2px solid white;
-  background-color:#5555d5;
-  color:white;
-  border-radius:5px;
-  margin:5px;
-  padding:5px;
-  font-size: 1.2em;
- }
- .spanishFlashButton:hover {
-   border:2px solid #5555d5;
-   background-color:white;
-   color:#5555d5;
-   cursor:pointer;
- }
- .spanishFlashContainer {
-   color:white;
-   background-color:#5555d5;
- }
- .spanishFlashtechStackContainer {
-  display:flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  text-align:center;      
-  margin:0 auto;
+/*-- Projects --*/
+.projectButtons {
   border:2px solid #4D4D4D;
-  width: 220px;
-  height:60px;
   background-color:#f5f7f9;
-  border-radius:5px;
-}
-
- /*-- Art of Finding --*/
- .artOfFindingButton {
-  border:2px solid #4D4D4D;
-  background-color:#fffae6;
   color:#4D4D4D;
   border-radius:5px;
   margin:5px;
   padding:5px;
   font-size: 1.2em;
  }
- .artOfFindingButton:hover {
-   border:2px solid #fffae6;
-   background-color:#4D4D4D;
-   color:#fffae6;
-   cursor:pointer;
- }
- .artOfFindingContainer {
-    background-color:#fffae6;
+
+.emailSendButton:focus,
+.emailSendButton:hover
+.projectButtons:hover {
+    color:#f5f7f9;
+    background-color:#4D4D4D;
+    border: solid 2px #f5f7f9;
+    cursor:pointer;
  }
 
 /*-- Contact --*/
@@ -325,24 +236,19 @@ p.normalText {
 }
 
 .emailContainer {
-  background-color: rgba(8, 118, 243, 0.493);
+  background-color: #4D4D4D;
   border-style: 2px solid #4D4D4D;
   margin:20px auto; 
   width:280px;
   border-radius: 5px;
   padding:10px;
   font-size: 28px;
+  border: 2px solid darkgrey;
+  transition: 0.15s;
+  -webkit-box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.3);
+     -moz-box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.3);
+          box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.3);
 }
-
-/* .emailContainer:hover,
-.emailContainer:focus
- {
-    transition: 0.15s;
-    transform: scale(1.01);
-    -webkit-box-shadow: 1px 3px 8px 2px rgba(0, 0, 0, 0.35);
-       -moz-box-shadow: 1px 3px 8px 2px rgba(0, 0, 0, 0.35);
-            box-shadow: 1px 3px 8px 2px rgba(0, 0, 0, 0.35);
- } */
 
 .emailAddressInput, 
 .emailMessageInput {
@@ -351,8 +257,8 @@ p.normalText {
   font-size: 1.1rem;
   width:100%;
   outline: none;
-  border: none;
-  border-radius:2px;
+  border: solid 1px darkgrey;
+  border-radius:4px;
   background-color:#f5f7f9;
  }
 
@@ -378,6 +284,7 @@ p.normalText {
   cursor:pointer;
   color:#f5f7f9;
   background-color:#4D4D4D;
+  border: solid 2px #f5f7f9;
 }
 
 input::placeholder,
@@ -402,7 +309,6 @@ textarea::placeholder {
    text-align:center;
 }
 
-
 .fab {
   font-size:3.5em;
   margin:5px;
@@ -426,7 +332,7 @@ textarea::placeholder {
   left:0;
   right:0;
   bottom:0;
-  padding:2px;
+  padding:3px;
   font-size:.9em;
 } 
  
