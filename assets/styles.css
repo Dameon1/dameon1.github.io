@@ -295,7 +295,7 @@ textarea::placeholder {
 /*-- Socials --*/
 .socials {
   grid-area:socials;
-  grid-template-rows: 1fr 11fr;
+  grid-template-rows: 1fr 4fr 1fr;
   grid-template-columns:100%;
   }
 .socialBoxes {
@@ -307,6 +307,15 @@ textarea::placeholder {
  
 #socials {
    text-align:center;
+}
+
+.emailLinkText {
+  font-Family: 'Work Sans', Sans-Serif;
+  font-size:1.8em;
+  font-weight:6;
+  text-align:center;
+  padding-top:40px;
+
 }
 
 .fab {
