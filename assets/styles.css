@@ -222,7 +222,7 @@ p.normalText {
  }
 
 .emailSendButton:focus,
-.emailSendButton:hover
+.emailSendButton:hover,
 .projectButtons:hover {
     color:#f5f7f9;
     background-color:#4D4D4D;
