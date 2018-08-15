@@ -149,6 +149,7 @@ p.normalText {
   word-spacing:5px;
   line-height:25px;
   font-size:1em;
+  text-align:justify;
 }
 
 .mockup {
