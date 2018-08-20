@@ -37,10 +37,10 @@
               <h2 class="portfolioNav topNavText">Portfolio</h2>
             </a>
             <div class="dropdown-content">
-              <a class="portfolioLinks" href=#what2eat >what2eat</a>
-              <a class="portfolioLinks" href=#melata >Melata</a>
-              <a class="portfolioLinks" href=#spanish_flash >Spanish Flash</a>
-              <a class="portfolioLinks" href=#art_of_finding >Art of Finding</a>
+              <a class="portfolioLinks" href="#what2eat" >what2eat</a>
+              <a class="portfolioLinks" href="#melata" >Melata</a>
+              <a class="portfolioLinks" href="#spanish_flash" >Spanish Flash</a>
+              <a class="portfolioLinks" href="#art_of_finding" >Art of Finding</a>
             </div>
           </div>
           <div>
@@ -67,15 +67,15 @@
     </article>
 
     <main class="portfolio" role="main" id="portfolioProjects">
+      <span id="what2eat"></span>
       <h3 class="sectionHeader" tabindex="0">Projects</h3>
       <section class="contentContainer">
-        <h3 class="titleText" id="what2eat" tabindex="0">What2Eat</h3>
+        <h3 class="titleText"  tabindex="0">What2Eat</h3>
         <p class="normalText" tabindex="0">A Recipe finder that allows users to search for recipes based on the ingredients they have then shows how many they are missing for that particular recipe.
           A landing page where users can make an account to get full features or continue on to the recipe finder as a guest for quick access.
           On selecting ingredients or adding their own, a user will get images of prospective recipes.
-          They can pick from the images and will get a simple view of the instructions and how to make the desired recipe.
-          There is a link at the bottom of the page leading to an in-depth overview of the recipe which will lead the user to a new page where a more in-depth view of the recipe is kept.
-          Created account users can keep track of saved recipes for quick access to get back to them, along with removing them if they are no longer wanted.</p>
+          They can pick from the images and will get a simple view of the instructions and how to make the desired recipe with a link
+          to a more in-depth overview of the recipe. Created account users can keep track of saved recipes for quick access to get back to them, along with removing them if they are no longer wanted.</p>
         <p class="techStackText">TECH STACK</p>
         <div class="techStackContainer">
           <a href="https://www.mongodb.com/">
@@ -106,9 +106,10 @@
           <img src="assets/images/whatToEatMockup.PNG" alt="images of what2eat website">
         </div>      
       </section>
-
+      
+      <hr  id="melata">
       <section class="contentContainer">
-        <h3 class="titleText" id="melata" tabindex="0">Melata</h3>
+        <h3 class="titleText" tabindex="0">Melata</h3>
         <p class="normalText" tabindex="0">Melata is a one stop shop for the coding newbie. 
             Designed to allow a user to watch instructional videos with an IDE to code along with on the same screen. 
             Users can pick through an assortment of languages and frameworks to learn the latest 'best-practices' in the industry.
@@ -129,7 +130,7 @@
             <img class="techStackImage" src="assets/images/node.PNG" alt="Node Logo" target="blank"/>
           </a>         
         </div>
-        <div class="buttonContainer">
+        <div class="buttonContainer"  >
           <a href="https://github.com/ThePaths/server" target="blank">
             <button class="projectButtons">Source Code-Server</button>
           </a>
@@ -145,8 +146,9 @@
         </div>
       </section>
 
+      <hr id="spanish_flash">
       <section class="contentContainer">
-        <h3 class="titleText" id="spanish_flash" tabindex="0">Spanish Flash</h3>
+        <h3 class="titleText" tabindex="0">Spanish Flash</h3>
         <p class="normalText" tabindex="0">Spanish Flash is an learning application that uses a flash-card style approach to helping one learn Spanish.
           Spanish Flash uses the spaced repetition algorithm, which is proven to help with learning and reinforcing one's understanding and 
           cognitive abilities in the field of study.</p>
@@ -177,12 +179,15 @@
           </a>
         </div>
         <div class="mockup">
-          <img src="assets/images/spanishFlashImage.PNG" alt="tablet images of Spanish Flash website">
+          <picture>
+            <img src="assets/images/spanishFlashImage.PNG" alt="tablet images of Spanish Flash website">
+          </picture>
         </div>
       </section>
       
+      <hr id="art_of_finding">
       <section class="contentContainer">
-        <h3 class="titleText" id="art_of_finding" tabindex="0">Art of Finding</h3>
+        <h3 class="titleText" tabindex="0">Art of Finding</h3>
         <p class="normalText"  tabindex="0">The Art of Finding application allows users to search for images of historic artwork.
           It provides data about the work of art on a card, as well as the location of the gallery where the art work is currently on display.
           Google Maps provides the address of the gallery. The user can browse Amazon to purchase images of the artwork.
