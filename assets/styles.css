@@ -18,7 +18,8 @@ hr {
   display:none;
 }
 label {
-  display:none
+  display:none;
+  color:white;
 }
 /* Page Layout */
 .grid {
