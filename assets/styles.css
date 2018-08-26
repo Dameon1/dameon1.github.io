@@ -17,7 +17,9 @@ body {
 hr {
   display:none;
 }
-
+label {
+  display:none
+}
 /* Page Layout */
 .grid {
     display:grid;
