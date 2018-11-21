@@ -161,6 +161,7 @@ p.normalText {
 .mockup {
   width:40%;
   margin:5px auto;
+  min-width: 200px;
 }
 
 .techStackContainer {
@@ -174,9 +175,9 @@ p.normalText {
 .techStackImage {
   margin:2px;
   padding:2px; 
-  width:50px;
-  height:50px;
-}
+  max-width: 100px;
+  height: 100px;
+ }
 
 .buttonContainer {   
   margin: 10px auto;
