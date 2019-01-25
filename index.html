@@ -1,306 +1,513 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="assets/reset.css">
-  <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon" />
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Work+Sans:300" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="assets/styles.css">
-  <title>Dameon Mendoza's Web Developer Portfolio page.</title>
-  <meta name="description" content="Project Portfolio page for Web Developer Dameon Mendoza including links to projects, tech stack used, and social engagement.">
-  <!-- for analytics -->
-  <script>
-    window['_fs_debug'] = false; window['_fs_host'] = 'fullstory.com'; window['_fs_org'] = 'GRF3V';
-    window['_fs_namespace'] = 'FS';
-    (function(m,n,e,t,l,o,g,y){
-        if (e in m) {if(m.console && m.console.log) { m.console.log('FullStory namespace conflict. Please set window["_fs_namespace"].');} return;}
-        g=m[e]=function(a,b,s){g.q?g.q.push([a,b,s]):g._api(a,b,s);};g.q=[];
-        o=n.createElement(t);o.async=1;o.src='https://'+_fs_host+'/s/fs.js';
-        y=n.getElementsByTagName(t)[0];y.parentNode.insertBefore(o,y);
-        g.identify=function(i,v,s){g(l,{uid:i},s);if(v)g(l,v,s)};g.setUserVars=function(v,s){g(l,v,s)};g.event=function(i,v,s){g('event',{n:i,p:v},s)};
-        g.shutdown=function(){g("rec",!1)};g.restart=function(){g("rec",!0)};
-        g.consent=function(a){g("consent",!arguments.length||a)};
-        g.identifyAccount=function(i,v){o='account';v=v||{};v.acctId=i;g(o,v)};
-        g.clearUserCookie=function(){};
-    })(window,document,window['_fs_namespace'],'script','user');
-    </script>
-</head>
- 
-<body>
-    
-  <div class="grid">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+      integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="assets/reset.css" />
+    <link
+      rel="shortcut icon"
+      href="assets/images/favicon.ico"
+      type="image/x-icon"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans|Work+Sans:300"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="assets/styles.css" />
+    <title>Dameon Mendoza's Web Developer Portfolio page.</title>
+    <meta
+      name="description"
+      content="Project Portfolio page for Web Developer Dameon Mendoza including links to projects, tech stack used, and social engagement."
+    />
+    <!-- for analytics -->
+    <script>
+      window['_fs_debug'] = false; window['_fs_host'] = 'fullstory.com'; window['_fs_org'] = 'GRF3V';
+      window['_fs_namespace'] = 'FS';
+      (function(m,n,e,t,l,o,g,y){
+          if (e in m) {if(m.console && m.console.log) { m.console.log('FullStory namespace conflict. Please set window["_fs_namespace"].');} return;}
+          g=m[e]=function(a,b,s){g.q?g.q.push([a,b,s]):g._api(a,b,s);};g.q=[];
+          o=n.createElement(t);o.async=1;o.src='https://'+_fs_host+'/s/fs.js';
+          y=n.getElementsByTagName(t)[0];y.parentNode.insertBefore(o,y);
+          g.identify=function(i,v,s){g(l,{uid:i},s);if(v)g(l,v,s)};g.setUserVars=function(v,s){g(l,v,s)};g.event=function(i,v,s){g('event',{n:i,p:v},s)};
+          g.shutdown=function(){g("rec",!1)};g.restart=function(){g("rec",!0)};
+          g.consent=function(a){g("consent",!arguments.length||a)};
+          g.identifyAccount=function(i,v){o='account';v=v||{};v.acctId=i;g(o,v)};
+          g.clearUserCookie=function(){};
+      })(window,document,window['_fs_namespace'],'script','user');
+      </script>
+  </head>
 
+  <body>
+    <div class="grid">
       <header class="logo" role="banner">
-          <h1 class="header" title="Dameon Mendoza">D. Mendoza</h1>
-      </header>  
-    
-        <nav id="navs" class="topNavContainer nav" role="navigation">
-          <div class="dropdown">
-            <a href="#socials">
-              <h2 class="topNavText">Social</h2>
-            </a>
-            <div class="dropdown-content">
-              <a class="portfolioLinks" href="https://www.linkedin.com/in/dameonmendoza" target="blank">linkedin</a>
-              <a class="portfolioLinks" href="https://twitter.com/Dameon_H2O" target="blank">twitter</a>
-              <a class="portfolioLinks" href="https://github.com/Dameon1" target="blank">github</a>
-            </div>
-          </div> 
-          <div class="dropdown">
-            <a href="#portfolioProjects">
-              <h2 class="portfolioNav topNavText">Portfolio</h2>
-            </a>
-            <div class="dropdown-content">
-              <a class="portfolioLinks" href="#what2eat" >what2eat</a>
-              <a class="portfolioLinks" href="#sickFits" >Sick Fits</a>
-              <a class="portfolioLinks" href="#melata" >Melata</a>
-              <a class="portfolioLinks" href="#spanish_flash" >Spanish Flash</a>
-              <a class="portfolioLinks" href="#art_of_finding" >Art of Finding</a>
-              <a class="portfolioLinks" href="https://www.dameonmendoza.com/jsHangman/" target='blank'>HangMan</a>
-            </div>
+        <h1 class="header" title="Dameon Mendoza">D. Mendoza</h1>
+      </header>
+
+      <nav id="navs" class="topNavContainer nav" role="navigation">
+        <div class="dropdown">
+          <a href="#socials"> <h2 class="topNavText">Social</h2> </a>
+          <div class="dropdown-content">
+            <a
+              class="portfolioLinks"
+              href="https://www.linkedin.com/in/dameonmendoza"
+              target="blank"
+              >linkedin</a
+            >
+            <a
+              class="portfolioLinks"
+              href="https://twitter.com/Dameon_H2O"
+              target="blank"
+              >twitter</a
+            >
+            <a
+              class="portfolioLinks"
+              href="https://github.com/Dameon1"
+              target="blank"
+              >github</a
+            >
           </div>
-          <div>
-            <a href="#contact">
-              <h2 class="topNavText">Contact</h2>
+        </div>
+        <div class="dropdown">
+          <a href="#portfolioProjects">
+            <h2 class="portfolioNav topNavText">Portfolio</h2>
+          </a>
+          <div class="dropdown-content">
+            <a class="portfolioLinks" href="#what2eat">what2eat</a>
+            <a class="portfolioLinks" href="#sickFits">Sick Fits</a>
+            <a class="portfolioLinks" href="#melata">Melata</a>
+            <a class="portfolioLinks" href="#spanish_flash">Spanish Flash</a>
+            <a class="portfolioLinks" href="#art_of_finding">Art of Finding</a>
+            <a
+              class="portfolioLinks"
+              href="https://www.dameonmendoza.com/jsHangman/"
+              target="blank"
+              >HangMan</a
+            >
+          </div>
+        </div>
+        <div>
+          <a href="#contact"> <h2 class="topNavText">Contact</h2> </a>
+        </div>
+      </nav>
+
+      <article id="about" class="about">
+        <picture>
+          <img
+            class="selfPicture"
+            src="assets/images/self.jpg"
+            alt="Photo of Dameon Mendoza"
+            tabindex="0"
+          />
+        </picture>
+        <div class="contentContainer">
+          <h3 class="titleText" tabindex="0">Hello.</h3>
+          <p class="normalText" tabindex="0">
+            My name is Dameon Mendoza and I am a Web Developer in the Sonoran
+            Desert area. I have a passion for all things in the Javascript space
+            with a focus on responsive modern design. Working as a team with
+            other developers, I have helped develop some interesting projects,
+            also some of my own personal ones along the way. Contact me for help
+            with your next Open-Source project, Non-Profit start-up, or
+            Adventurous Web Application ideas by sending an email below or on
+            your favorite mail client at dameonmendoza@gmail.com.
+          </p>
+        </div>
+      </article>
+
+      <main class="portfolio" role="main" id="portfolioProjects">
+        <span id="what2eat"></span>
+        <h3 class="sectionHeader" tabindex="0">Projects</h3>
+        <section class="contentContainer">
+          <h3 class="titleText" tabindex="0">What2Eat</h3>
+          <p class="normalText" tabindex="0">
+            A Recipe finder that allows users to search for recipes based on the
+            ingredients they have then shows how many they are missing for that
+            particular recipe. A landing page where users can make an account to
+            get full features or continue on to the recipe finder as a guest for
+            quick access. On selecting ingredients or adding their own, a user
+            will get images of prospective recipes. They can pick from the
+            images and will get a simple view of the instructions and how to
+            make the desired recipe with a link to a more in-depth overview of
+            the recipe. Created account users can keep track of saved recipes
+            for quick access to get back to them, along with removing them if
+            they are no longer wanted.
+          </p>
+          <p class="techStackText">TECH STACK</p>
+          <div class="techStackContainer">
+            <a href="https://www.mongodb.com/" target="blank">
+              <img
+                class="techStackImage"
+                src="assets/images/mongodb.jpg"
+                alt="MongoDB Logo"
+              />
+            </a>
+            <a href="https://expressjs.com/" target="blank">
+              <img
+                class="techStackImage"
+                src="assets/images/express3d.jpg"
+                alt="Express Logo"
+              />
+            </a>
+            <a href="https://redux.js.org/introduction" target="blank">
+              <img
+                class="techStackImage"
+                src="assets/images/redux.jpg"
+                alt="Redux Logo"
+              />
+            </a>
+            <a href="https://nodejs.org/en/" target="blank">
+              <img
+                class="techStackImage"
+                src="assets/images/node.jpg"
+                alt="Node Logo"
+              />
             </a>
           </div>
-        </nav>
-   
+          <div class="buttonContainer">
+            <a href="https://github.com/Dameon1/what2eat-server" target="blank">
+              <button class="projectButtons">Source Code-Server</button>
+            </a>
+            <a href="https://github.com/Dameon1/what2eat-client" target="blank">
+              <button class="projectButtons">Source Code-Client</button>
+            </a>
+            <a href="https://www.what2eat.website" target="blank">
+              <button class="projectButtons">Deployed Site</button>
+            </a>
+          </div>
+          <div class="mockup">
+            <img
+              src="assets/images/whattoeatmockup.jpg"
+              alt="images of what2eat website"
+            />
+          </div>
+        </section>
 
-    <article id="about" class="about">
-      <picture>
-        <img class="selfPicture" src="assets/images/self.jpg" alt="Photo of Dameon Mendoza" tabindex="0">
-      </picture>
-      <div class="contentContainer">          
-        <h3 class="titleText" tabindex="0">Hello.</h3>
-        <p class="normalText" tabindex="0">My name is Dameon Mendoza and I am a Web Developer in the Sonoran Desert area. I have a passion for all things in the Javascript space with a focus
-            on responsive modern design. Working as a team with other developers, I have helped develop some interesting 
-            projects, also some of my own personal ones along the way. Contact me for help with your next Open-Source project,
-            Non-Profit start-up, or Adventurous Web Application ideas by sending an email below or on your favorite mail client
-            at dameonmendoza@gmail.com.
-        </p>  
-      </div>     
-    </article>
+        <hr id="sickFits" />
+        <section class="contentContainer">
+          <h3 class="titleText" tabindex="0">Sick Fits</h3>
+          <p class="normalText" tabindex="0">
+            Sick fits is an application where users can buy and sell products.
+            Users can create a profile to post pictures of their products along
+            with a description of the product and a price they are selling that
+            item for.
+          </p>
+          <p class="techStackText">TECH STACK</p>
+          <div class="techStackContainer">
+            <a href="https://reactjs.org/" target="blank">
+              <img
+                class="techStackImage"
+                src="assets/images/react.jpg"
+                alt="React Logo"
+              />
+            </a>
+            <a href="https://www.apollographql.com/" target="blank">
+              <img
+                class="techStackImage"
+                src="assets/images/apolloclient.jpg"
+                alt="Apollo Logo"
+              />
+            </a>
+            <a href="https://github.com/prisma/graphql-yoga" target="blank">
+              <img
+                class="techStackImage"
+                src="assets/images/graphqlyoga.jpg"
+                alt="GraphQl Yoga Logo"
+              />
+            </a>
+            <a href="https://www.prisma.io/" target="blank">
+              <img
+                class="techStackImage"
+                src="assets/images/prisma.jpg"
+                alt="Prisma Logo"
+              />
+            </a>
+          </div>
+          <div class="buttonContainer">
+            <a href="https://github.com/Dameon1/sickFitsServer" target="blank">
+              <button class="projectButtons">Source Code-Server</button>
+            </a>
+            <a href="https://github.com/Dameon1/sickFitsClient" target="blank">
+              <button class="projectButtons">Source Code-Client</button>
+            </a>
+            <a
+              href="https://sickfitsnext-production.herokuapp.com/"
+              target="blank"
+            >
+              <button class="projectButtons">Deployed Site</button>
+            </a>
+          </div>
+          <div class="mockup">
+            <img
+              src="assets/images/sickfitsmock.jpg"
+              alt="computer and phone images of sick fits site"
+            />
+          </div>
+        </section>
 
-    <main class="portfolio" role="main" id="portfolioProjects">
-      <span id="what2eat"></span>
-      <h3 class="sectionHeader" tabindex="0">Projects</h3>
-      <section class="contentContainer">
-        <h3 class="titleText"  tabindex="0">What2Eat</h3>
-        <p class="normalText" tabindex="0">A Recipe finder that allows users to search for recipes based on the ingredients they have then shows how many they are missing for that particular recipe.
-          A landing page where users can make an account to get full features or continue on to the recipe finder as a guest for quick access.
-          On selecting ingredients or adding their own, a user will get images of prospective recipes.
-          They can pick from the images and will get a simple view of the instructions and how to make the desired recipe with a link
-          to a more in-depth overview of the recipe. Created account users can keep track of saved recipes for quick access to get back to them, along with removing them if they are no longer wanted.</p>
-        <p class="techStackText">TECH STACK</p>
-        <div class="techStackContainer">
-          <a href="https://www.mongodb.com/" target="blank">
-            <img class="techStackImage" src="assets/images/mongodb.jpg" alt="MongoDB Logo" />
-          </a>
-          <a href="https://expressjs.com/" target="blank">
-            <img class="techStackImage" src="assets/images/express3d.jpg" alt="Express Logo" />
-          </a>
-          <a href="https://redux.js.org/introduction" target="blank">
-            <img class="techStackImage" src="assets/images/redux.jpg" alt="Redux Logo" />
-          </a>
-          <a href="https://nodejs.org/en/" target="blank">
-            <img class="techStackImage" src="assets/images/node.jpg" alt="Node Logo" />
-          </a>                     
-        </div> 
-        <div class="buttonContainer">
-          <a href="https://github.com/Dameon1/what2eat-server" target="blank">
-            <button class="projectButtons">Source Code-Server</button>
-          </a>
-          <a href="https://github.com/Dameon1/what2eat-client" target="blank">
-            <button class="projectButtons">Source Code-Client</button>
-          </a>          
-          <a href="https://www.what2eat.website" target="blank">
-            <button class="projectButtons">Deployed Site</button>
-          </a>
-        </div>
-        <div class="mockup">
-          <img src="assets/images/whattoeatmockup.jpg" alt="images of what2eat website">
-        </div>      
-      </section>
+        <hr id="melata" />
+        <section class="contentContainer">
+          <h3 class="titleText" tabindex="0">Melata</h3>
+          <p class="normalText" tabindex="0">
+            Melata is a one stop shop for the coding newbie. Designed to allow a
+            user to watch instructional videos with an IDE to code along with on
+            the same screen. Users can pick through an assortment of languages
+            and frameworks to learn the latest 'best-practices' in the industry.
+            Melata keeps track of a user history so they can easily pick up
+            where they left off or choose a new path. Sample code is provided
+            with each video to be able to follow along with the developer
+            inspired instructional videos.
+          </p>
+          <p class="techStackText">TECH STACK</p>
+          <div class="techStackContainer">
+            <a href="https://www.mongodb.com/" target="blank">
+              <img
+                class="techStackImage"
+                src="assets/images/mongodb.jpg"
+                alt="MongoDB Logo"
+              />
+            </a>
+            <a href="https://expressjs.com/" target="blank">
+              <img
+                class="techStackImage"
+                src="assets/images/express3d.jpg"
+                alt="Express Logo"
+              />
+            </a>
+            <a href="https://redux.js.org/introduction" target="blank">
+              <img
+                class="techStackImage"
+                src="assets/images/redux.jpg"
+                alt="Redux Logo"
+              />
+            </a>
+            <a href="https://nodejs.org/en/" target="blank">
+              <img
+                class="techStackImage"
+                src="assets/images/node.jpg"
+                alt="Node Logo"
+              />
+            </a>
+          </div>
+          <div class="buttonContainer">
+            <a href="https://github.com/ThePaths/server" target="blank">
+              <button class="projectButtons">Source Code-Server</button>
+            </a>
+            <a href="https://github.com/ThePaths/client" target="blank">
+              <button class="projectButtons">Source Code-Client</button>
+            </a>
+            <a href="https://melata-app.firebaseapp.com/" target="blank">
+              <button class="projectButtons">Deployed Site</button>
+            </a>
+          </div>
+          <div class="mockup">
+            <img
+              src="assets/images/melata.jpg"
+              alt="images of Melata website"
+            />
+          </div>
+        </section>
 
-      <hr id="sickFits">
-      <section class="contentContainer">
-        <h3 class="titleText" tabindex="0">Sick Fits</h3>
-        <p class="normalText" tabindex="0">
-          Sick fits is an application where users can buy and sell products. Users can create a profile to post
-          pictures of their products along with a description of the product and a price they are selling that item
-          for. 
-        </p>
-        <p class="techStackText">TECH STACK</p>
-        <div class="techStackContainer">          
-          <a href="https://reactjs.org/" target="blank">
-            <img class="techStackImage" src="assets/images/react.jpg" alt="React Logo"/>
-          </a>       
-          <a href="https://www.apollographql.com/" target="blank">
-            <img class="techStackImage" src="assets/images/apolloclient.jpg" alt="Apollo Logo" />
-          </a>        
-          <a href="https://github.com/prisma/graphql-yoga" target="blank">
-            <img class="techStackImage" src="assets/images/graphqlyoga.jpg" alt="GraphQl Yoga Logo" />
-          </a>        
-          <a href="https://www.prisma.io/" target="blank">
-            <img class="techStackImage" src="assets/images/prisma.jpg" alt="Prisma Logo" />
-          </a>         
-        </div>
-        <div class="buttonContainer" >
-          <a href="https://github.com/Dameon1/sickFitsServer" target="blank">
-            <button class="projectButtons">Source Code-Server</button>
-          </a>
-          <a href="https://github.com/Dameon1/sickFitsClient" target="blank">
-            <button class="projectButtons">Source Code-Client</button>
-          </a>
-          <a href="https://sickfitsnext-production.herokuapp.com/" target="blank">
-            <button class="projectButtons">Deployed Site</button>
-          </a>
-        </div>
-        <div class="mockup">
-            <img src="assets/images/sickfitsmock.jpg" alt="computer and phone images of sick fits site">
-        </div>
-      </section>
-      
-      <hr  id="melata">
-      <section class="contentContainer">
-        <h3 class="titleText" tabindex="0">Melata</h3>
-        <p class="normalText" tabindex="0">Melata is a one stop shop for the coding newbie. 
-            Designed to allow a user to watch instructional videos with an IDE to code along with on the same screen. 
-            Users can pick through an assortment of languages and frameworks to learn the latest 'best-practices' in the industry.
-            Melata keeps track of a user history so they can easily pick up where they left off or choose a new path.
-            Sample code is provided with each video to be able to follow along with the developer inspired instructional videos.</p>
-        <p class="techStackText">TECH STACK</p>
-        <div class="techStackContainer">          
-          <a href="https://www.mongodb.com/" target="blank">
-            <img class="techStackImage" src="assets/images/mongodb.jpg" alt="MongoDB Logo"/>
-          </a>       
-          <a href="https://expressjs.com/" target="blank">
-            <img class="techStackImage" src="assets/images/express3d.jpg" alt="Express Logo" />
-          </a>        
-          <a href="https://redux.js.org/introduction" target="blank">
-            <img class="techStackImage" src="assets/images/redux.jpg" alt="Redux Logo" />
-          </a>        
-          <a href="https://nodejs.org/en/" target="blank">
-            <img class="techStackImage" src="assets/images/node.jpg" alt="Node Logo" />
-          </a>         
-        </div>
-        <div class="buttonContainer" >
-          <a href="https://github.com/ThePaths/server" target="blank">
-            <button class="projectButtons">Source Code-Server</button>
-          </a>
-          <a href="https://github.com/ThePaths/client" target="blank">
-            <button class="projectButtons">Source Code-Client</button>
-          </a>
-          <a href="https://melata-app.firebaseapp.com/" target="blank">
-            <button class="projectButtons">Deployed Site</button>
-          </a>
-        </div>
-        <div class="mockup">
-          <img src="assets/images/melata.jpg" alt="images of Melata website">
-        </div>
-      </section>
+        <hr id="spanish_flash" />
+        <section class="contentContainer">
+          <h3 class="titleText" tabindex="0">Spanish Flash</h3>
+          <p class="normalText" tabindex="0">
+            Spanish Flash is an learning application that uses a flash-card
+            style approach to helping one learn Spanish. Spanish Flash uses the
+            spaced repetition algorithm, which is proven to help with learning
+            and reinforcing one's understanding and cognitive abilities in the
+            field of study.
+          </p>
+          <p class="techStackText">TECH STACK</p>
+          <div class="techStackContainer">
+            <a href="https://www.mongodb.com/" target="blank">
+              <img
+                class="techStackImage"
+                src="assets/images/mongodb.jpg"
+                alt="MongoDB Logo"
+              />
+            </a>
+            <a href="https://expressjs.com/" target="blank">
+              <img
+                class="techStackImage"
+                src="assets/images/express3d.jpg"
+                alt="Express Logo"
+              />
+            </a>
+            <a href="https://redux.js.org/introduction" target="blank">
+              <img
+                class="techStackImage"
+                src="assets/images/redux.jpg"
+                alt="Redux Logo"
+              />
+            </a>
+            <a href="https://nodejs.org/en/" target="blank">
+              <img
+                class="techStackImage"
+                src="assets/images/node.jpg"
+                alt="Node Logo"
+              />
+            </a>
+          </div>
+          <div class="buttonContainer">
+            <a
+              href="https://github.com/Dameon1/spacedRepetition-server"
+              target="blank"
+            >
+              <button class="projectButtons">Source Code-Server</button>
+            </a>
+            <a
+              href="https://github.com/Dameon1/spacedRepetition-client/tree/master"
+              target="blank"
+            >
+              <button class="projectButtons">Source Code-Client</button>
+            </a>
+            <a
+              href="https://www.dameonmendoza.com/spacedRepetition-client/"
+              target="blank"
+            >
+              <button class="projectButtons">Deployed Site</button>
+            </a>
+          </div>
+          <div class="mockup">
+            <picture>
+              <img
+                src="assets/images/spanishflashimage.jpg"
+                alt="tablet images of Spanish Flash website"
+              />
+            </picture>
+          </div>
+        </section>
 
-      <hr id="spanish_flash">
-      <section class="contentContainer">
-        <h3 class="titleText" tabindex="0">Spanish Flash</h3>
-        <p class="normalText" tabindex="0">Spanish Flash is an learning application that uses a flash-card style approach to helping one learn Spanish.
-          Spanish Flash uses the spaced repetition algorithm, which is proven to help with learning and reinforcing one's understanding and 
-          cognitive abilities in the field of study.</p>
-        <p class="techStackText">TECH STACK</p>
-        <div class="techStackContainer">         
-          <a href="https://www.mongodb.com/" target="blank">
-            <img class="techStackImage" src="assets/images/mongodb.jpg" alt="MongoDB Logo" />
-          </a>         
-          <a href="https://expressjs.com/" target="blank">
-            <img class="techStackImage" src="assets/images/express3d.jpg" alt="Express Logo" />
-          </a>         
-          <a href="https://redux.js.org/introduction" target="blank">
-            <img class="techStackImage" src="assets/images/redux.jpg" alt="Redux Logo" />
-          </a>         
-          <a href="https://nodejs.org/en/" target="blank">
-            <img class="techStackImage" src="assets/images/node.jpg" alt="Node Logo" />
-          </a>         
-        </div>
-        <div class="buttonContainer">
-          <a href="https://github.com/Dameon1/spacedRepetition-server" target="blank">
-            <button class="projectButtons">Source Code-Server</button>
-          </a>
-          <a href="https://github.com/Dameon1/spacedRepetition-client/tree/master" target="blank">
-            <button class="projectButtons">Source Code-Client</button>
-          </a>
-          <a href="https://www.dameonmendoza.com/spacedRepetition-client/" target="blank">
-            <button class="projectButtons">Deployed Site</button>
-          </a>
-        </div>
-        <div class="mockup">
-          <picture>
-            <img src="assets/images/spanishflashimage.jpg" alt="tablet images of Spanish Flash website">
-          </picture>
-        </div>
-      </section>
-      
-      <hr id="art_of_finding">
-      <section class="contentContainer">
-        <h3 class="titleText" tabindex="0">Art of Finding</h3>
-        <p class="normalText"  tabindex="0">The Art of Finding application allows users to search for images of historic artwork.
-          It provides data about the work of art on a card, as well as the location of the gallery where the art work is currently on display.
-          Google Maps provides the address of the gallery. The user can browse Amazon to purchase images of the artwork.
-        </p>
-        <p class="techStackText">TECH STACK</p>
-        <div class="techStackContainer" >         
-              <a href="https://www.w3.org/Style/CSS/Overview.en.html" target="blank">
-                <img class="techStackImage" src="assets/images/css3.jpg" alt="CSS3 Logo"/>
-              </a>       
+        <hr id="art_of_finding" />
+        <section class="contentContainer">
+          <h3 class="titleText" tabindex="0">Art of Finding</h3>
+          <p class="normalText" tabindex="0">
+            The Art of Finding application allows users to search for images of
+            historic artwork. It provides data about the work of art on a card,
+            as well as the location of the gallery where the art work is
+            currently on display. Google Maps provides the address of the
+            gallery. The user can browse Amazon to purchase images of the
+            artwork.
+          </p>
+          <p class="techStackText">TECH STACK</p>
+          <div class="techStackContainer">
+            <a
+              href="https://www.w3.org/Style/CSS/Overview.en.html"
+              target="blank"
+            >
+              <img
+                class="techStackImage"
+                src="assets/images/css3.jpg"
+                alt="CSS3 Logo"
+              />
+            </a>
             <a href="https://www.w3.org/" target="blank">
-              <img class="techStackImage" src="assets/images/html.jpg" alt="HTML5 Logo"/>
-            </a>       
+              <img
+                class="techStackImage"
+                src="assets/images/html.jpg"
+                alt="HTML5 Logo"
+              />
+            </a>
             <a href="https://jquery.com/" target="blank">
-              <img class="techStackImage" src="assets/images/jquery.jpg" alt="jQuery Logo"/>
-            </a>         
-        </div>
-        <div class="buttonContainer">
-          <a href="https://github.com/Dameon1/artFinder" target="blank">
-            <button class="projectButtons">Source Code</button>
-          </a>
-          <a href="https://dameon1.github.io/artFinder/" target="blank">
-            <button class="projectButtons">Deployed Site</button>
-          </a>
-        </div>
-        <div class="mockup">
-          <img src="assets/images/artoffindingimage.jpg"   alt="Multiple images of website">
+              <img
+                class="techStackImage"
+                src="assets/images/jquery.jpg"
+                alt="jQuery Logo"
+              />
+            </a>
+          </div>
+          <div class="buttonContainer">
+            <a href="https://github.com/Dameon1/artFinder" target="blank">
+              <button class="projectButtons">Source Code</button>
+            </a>
+            <a href="https://dameon1.github.io/artFinder/" target="blank">
+              <button class="projectButtons">Deployed Site</button>
+            </a>
+          </div>
+          <div class="mockup">
+            <img
+              src="assets/images/artoffindingimage.jpg"
+              alt="Multiple images of website"
+            />
+          </div>
+        </section>
+      </main>
+
+      <section id="contact" class="contact">
+        <h3 class="sectionHeader" tabindex="0">Send me an e-mail</h3>
+        <form
+          role="form"
+          class="emailContainer"
+          aria-live="polite"
+          method="POST"
+          action="https://formspree.io/dameonmendoza@gmail.com"
+        >
+          <label for="email" class="emailAddressLabel">E-mail</label><br />
+          <input
+            class="emailAddressInput"
+            id="email"
+            type="email"
+            name="email"
+            placeholder="Your e-mail"
+            aria-label="email"
+          /><br />
+
+          <label for="message" class="emailLabel">Message</label><br />
+          <textarea
+            name="message"
+            id="message"
+            class="emailMessageInput"
+            rows="4"
+            placeholder="Leave a message"
+            type="text"
+            aria-label="message"
+          ></textarea
+          ><br />
+
+          <button class="emailSendButton" type="submit">Send</button>
+        </form>
+      </section>
+
+      <section class="socials">
+        <h3 class="sectionHeader">Socially</h3>
+        <div class="socialBoxes" id="socials">
+          <a
+            href="https://github.com/Dameon1"
+            title="Github"
+            class="fab fa-github-square tag"
+            alt="Github Logo"
+            aria-label="Github"
+            target="blank"
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/dameonmendoza"
+            title="LinkedIn"
+            class="fab fa-linkedin tag"
+            alt="LinkedIn Logo"
+            aria-label="LinkedIn"
+            target="blank"
+          ></a>
+          <a
+            href="https://twitter.com/Dameon_H2O"
+            title="Twitter"
+            class="fab fa-twitter-square tag"
+            alt="Twitter Logo"
+            aria-label="Twitter"
+            target="blank"
+          ></a>
         </div>
       </section>
-    </main>
 
-    <section id="contact" class="contact">
-      <h3 class="sectionHeader" tabindex="0">Send me an e-mail</h3>
-      <form  role='form' class="emailContainer" aria-live="polite" method="POST" action="https://formspree.io/dameonmendoza@gmail.com">
-        
-          <label for="email" class='emailAddressLabel'>E-mail</label><br>
-          <input class="emailAddressInput" id='email' type="email" name="email" placeholder="Your e-mail" aria-label="email"><br>
-          
-          <label for="message" class='emailLabel'>Message</label><br>
-          <textarea name="message" id='message' class="emailMessageInput" rows='4' placeholder="Leave a message" type="text" aria-label="message"></textarea><br>
-        
-          <button class="emailSendButton" type="submit">Send</button>
-      </form>    
-    </section>
-
-    <section class="socials">
-      <h3 class="sectionHeader">Socially</h3>
-      <div class="socialBoxes" id="socials">
-        <a href="https://github.com/Dameon1" title='Github' class="fab fa-github-square tag" alt="Github Logo" aria-label="Github" target="blank"></a>
-        <a href="https://www.linkedin.com/in/dameonmendoza" title='LinkedIn' class="fab fa-linkedin tag" alt="LinkedIn Logo" aria-label="LinkedIn" target="blank"></a>
-        <a href="https://twitter.com/Dameon_H2O" title='Twitter' class="fab fa-twitter-square tag" alt="Twitter Logo" aria-label="Twitter" target="blank"></a>
-      </div>
-    </section>
-    
-    <footer class="footer" role="contentinfo">
-      <h4 class="footerText">Copyright DameonMendoza@2018</h4>
-    </footer>
-  </div>
-</body>
+      <footer class="footer" role="contentinfo">
+        <h4 class="footerText">Copyright DameonMendoza@2018</h4>
+      </footer>
+    </div>
+  </body>
 </html>
