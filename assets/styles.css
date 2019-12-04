@@ -178,18 +178,18 @@ p.normalText {
   max-width: 100px;
   height: 100px;
  }
-
-.buttonContainer {   
-  margin: 10px auto;
-  text-align:center; 
-}
-
+ 
 .techStackText {
   font-Family: 'Open Sans', Sans-Serif;
   font-size: 1.2em;
   font-weight: 500;
   text-align: center;
   padding:5px;
+}
+
+.buttonContainer {   
+  margin: 10px auto;
+  text-align:center; 
 }
 
 .projectButtons {
@@ -329,7 +329,6 @@ textarea::placeholder {
 }
 
 /* Footer Section */
-
 .footer {
   grid-area:ft;
 }
@@ -353,7 +352,7 @@ img {
 
 a {
   text-decoration:none;
-  color:black;
+  color:rgb(136, 132, 132);
   }
 
 a:hover {  
