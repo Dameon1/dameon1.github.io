@@ -1,35 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="assets/reset.css">
-  <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon" />
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Work+Sans:300" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="assets/styles.css">
-  <title>Dameon Mendoza's Web Developer Portfolio page.</title>
-  <meta name="description" content="Project Portfolio page for Web Developer Dameon Mendoza including links to projects, tech stack used, and social engagement.">
-  
-  <!-- for analytics -->
-  <script>
-    window['_fs_debug'] = false; window['_fs_host'] = 'fullstory.com'; window['_fs_org'] = 'GRF3V';
-    window['_fs_namespace'] = 'FS';
-    (function(m,n,e,t,l,o,g,y){
-        if (e in m) {if(m.console && m.console.log) { m.console.log('FullStory namespace conflict. Please set window["_fs_namespace"].');} return;}
-        g=m[e]=function(a,b,s){g.q?g.q.push([a,b,s]):g._api(a,b,s);};g.q=[];
-        o=n.createElement(t);o.async=1;o.src='https://'+_fs_host+'/s/fs.js';
-        y=n.getElementsByTagName(t)[0];y.parentNode.insertBefore(o,y);
-        g.identify=function(i,v,s){g(l,{uid:i},s);if(v)g(l,v,s)};g.setUserVars=function(v,s){g(l,v,s)};g.event=function(i,v,s){g('event',{n:i,p:v},s)};
-        g.shutdown=function(){g("rec",!1)};g.restart=function(){g("rec",!0)};
-        g.consent=function(a){g("consent",!arguments.length||a)};
-        g.identifyAccount=function(i,v){o='account';v=v||{};v.acctId=i;g(o,v)};
-        g.clearUserCookie=function(){};
-    })(window,document,window['_fs_namespace'],'script','user');
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+      integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="assets/reset.css" />
+    <link
+      rel="shortcut icon"
+      href="assets/images/favicon.ico"
+      type="image/x-icon"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans|Work+Sans:300"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="assets/styles.css" />
+    <title>Dameon Mendoza's Web Developer Portfolio page.</title>
+    <meta
+      name="description"
+      content="Project Portfolio page for Web Developer Dameon Mendoza including links to projects, tech stack used, and social engagement."
+    />
+
+    <!-- for analytics -->
+    <script>
+      window["_fs_debug"] = false;
+      window["_fs_host"] = "fullstory.com";
+      window["_fs_org"] = "GRF3V";
+      window["_fs_namespace"] = "FS";
+      (function (m, n, e, t, l, o, g, y) {
+        if (e in m) {
+          if (m.console && m.console.log) {
+            m.console.log(
+              'FullStory namespace conflict. Please set window["_fs_namespace"].'
+            );
+          }
+          return;
+        }
+        g = m[e] = function (a, b, s) {
+          g.q ? g.q.push([a, b, s]) : g._api(a, b, s);
+        };
+        g.q = [];
+        o = n.createElement(t);
+        o.async = 1;
+        o.src = "https://" + _fs_host + "/s/fs.js";
+        y = n.getElementsByTagName(t)[0];
+        y.parentNode.insertBefore(o, y);
+        g.identify = function (i, v, s) {
+          g(l, { uid: i }, s);
+          if (v) g(l, v, s);
+        };
+        g.setUserVars = function (v, s) {
+          g(l, v, s);
+        };
+        g.event = function (i, v, s) {
+          g("event", { n: i, p: v }, s);
+        };
+        g.shutdown = function () {
+          g("rec", !1);
+        };
+        g.restart = function () {
+          g("rec", !0);
+        };
+        g.consent = function (a) {
+          g("consent", !arguments.length || a);
+        };
+        g.identifyAccount = function (i, v) {
+          o = "account";
+          v = v || {};
+          v.acctId = i;
+          g(o, v);
+        };
+        g.clearUserCookie = function () {};
+      })(window, document, window["_fs_namespace"], "script", "user");
     </script>
-  
-</head>
+  </head>
   <body>
     <div class="grid">
       <header class="logo" role="banner">
@@ -70,24 +120,42 @@
             <a class="portfolioLinks" href="#melata">Melata</a>
             <a class="portfolioLinks" href="#spanish_flash">Spanish Flash</a>
             <a class="portfolioLinks" href="#art_of_finding">Art of Finding</a>
-            <a class="portfolioLinks"
-               href="https://www.dameonmendoza.com/jsHangman/"
-               target="_blank">Hangman</a>
-            <a class="portfolioLinks"
-               href="https://www.dameonmendoza.com/Star-Wars-RPG/"
-               target="_blank">Star-Wars-RPG</a>              
-            <a class="portfolioLinks"
-               href="https://www.dameonmendoza.com/Psychic-Game/"
-               target="_blank">Psychic-Game</a>
-            <a class="portfolioLinks"
-               href="https://www.dameonmendoza.com/triviaGame/"
-               target="_blank">Trivia-Game</a>
-            <a class="portfolioLinks"
-               href="https://www.dameonmendoza.com/giphy-api/"
-               target="_blank">Giphy-API</a>
-            <a class="portfolioLinks"
-               href="https://www.dameonmendoza.com/Weather-Finder/"
-               target="_blank">Weather-Finder</a>
+            <a
+              class="portfolioLinks"
+              href="https://www.dameonmendoza.com/jsHangman/"
+              target="_blank"
+              >Hangman</a
+            >
+            <a
+              class="portfolioLinks"
+              href="https://www.dameonmendoza.com/Star-Wars-RPG/"
+              target="_blank"
+              >Star-Wars-RPG</a
+            >
+            <a
+              class="portfolioLinks"
+              href="https://www.dameonmendoza.com/Psychic-Game/"
+              target="_blank"
+              >Psychic-Game</a
+            >
+            <a
+              class="portfolioLinks"
+              href="https://www.dameonmendoza.com/triviaGame/"
+              target="_blank"
+              >Trivia-Game</a
+            >
+            <a
+              class="portfolioLinks"
+              href="https://www.dameonmendoza.com/giphy-api/"
+              target="_blank"
+              >Giphy-API</a
+            >
+            <a
+              class="portfolioLinks"
+              href="https://www.dameonmendoza.com/Weather-Finder/"
+              target="_blank"
+              >Weather-Finder</a
+            >
           </div>
         </div>
         <div>
@@ -107,9 +175,14 @@
         <div class="contentContainer">
           <h3 class="titleText" tabindex="0">Hello World.</h3>
           <p class="normalText" tabindex="0">
-            My name is Dameon Mendoza and I am a Web Developer having fun in the Sonoran
-            Desert area. I am currently creating web sites and applications along with creating new food dishes 
-            at <a href='https://www.harvestov.com/' target='_blank'>Harvest Oro Valley</a>.        </div>
+            My name is Dameon Mendoza and I am a Web Developer having fun in the
+            Sonoran Desert area. I am currently creating web sites and
+            applications along with creating new food dishes at
+            <a href="https://www.harvestov.com/" target="_blank"
+              >Harvest Oro Valley</a
+            >.
+          </p>
+        </div>
       </article>
 
       <main class="portfolio" role="main" id="portfolioProjects">
@@ -246,10 +319,10 @@
           <p class="normalText" tabindex="0">
             A recipe finder that allows users to search for recipes based on the
             ingredients they have then shows how many they are missing for that
-            particular recipe using React and Redux. Deployed site uses an Apollo and GraphQl stack.
-            Creating accounts users can keep track of saved recipes
-            for quick access to get back to them, along with removing them if
-            they are no longer wanted.
+            particular recipe using React and Redux. Deployed site uses an
+            Apollo and GraphQl stack. Creating accounts users can keep track of
+            saved recipes for quick access to get back to them, along with
+            removing them if they are no longer wanted.
           </p>
           <p class="techStackText">TECH STACK</p>
           <div class="techStackContainer">
@@ -283,13 +356,22 @@
             </a>
           </div>
           <div class="buttonContainer">
-            <a href="https://github.com/Dameon1/what2eat-server" target="_blank">
+            <a
+              href="https://github.com/Dameon1/what2eat-server"
+              target="_blank"
+            >
               <button class="projectButtons">Source Code-Server</button>
             </a>
-            <a href="https://github.com/Dameon1/what2eat-client" target="_blank">
+            <a
+              href="https://github.com/Dameon1/what2eat-client"
+              target="_blank"
+            >
               <button class="projectButtons">Source Code-Client</button>
             </a>
-            <a href="https://www.dameonmendoza.com/graphQL-recipeFinderClient/" target="_blank">
+            <a
+              href="https://www.dameonmendoza.com/graphQL-recipeFinderClient/"
+              target="_blank"
+            >
               <button class="projectButtons">Deployed Site</button>
             </a>
           </div>
@@ -300,16 +382,15 @@
             />
           </div>
         </section>
-        
 
         <hr id="spanish_flash" />
         <section class="contentContainer">
           <h3 class="titleText" tabindex="0">Spanish Flash</h3>
           <p class="normalText" tabindex="0">
-            Spanish Flash is a learning application that uses a flash-card
-            style approach to helping one learn Spanish. Spanish Flash uses the
-            spaced repetition algorithm, which is proven to help with learning
-            and reinforcing one's understanding abilities in the field of study.
+            Spanish Flash is a learning application that uses a flash-card style
+            approach to helping one learn Spanish. Spanish Flash uses the spaced
+            repetition algorithm, which is proven to help with learning and
+            reinforcing one's understanding abilities in the field of study.
           </p>
           <p class="techStackText">TECH STACK</p>
           <div class="techStackContainer">
