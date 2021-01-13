@@ -1,35 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="assets/reset.css">
-  <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon" />
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Work+Sans:300" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="assets/styles.css">
-  <title>Dameon Mendoza's Web Developer Portfolio page.</title>
-  <meta name="description" content="Project Portfolio page for Web Developer Dameon Mendoza including links to projects, tech stack used, and social engagement.">
-  
-  <!-- for analytics -->
-  <script>
-    window['_fs_debug'] = false; window['_fs_host'] = 'fullstory.com'; window['_fs_org'] = 'GRF3V';
-    window['_fs_namespace'] = 'FS';
-    (function(m,n,e,t,l,o,g,y){
-        if (e in m) {if(m.console && m.console.log) { m.console.log('FullStory namespace conflict. Please set window["_fs_namespace"].');} return;}
-        g=m[e]=function(a,b,s){g.q?g.q.push([a,b,s]):g._api(a,b,s);};g.q=[];
-        o=n.createElement(t);o.async=1;o.src='https://'+_fs_host+'/s/fs.js';
-        y=n.getElementsByTagName(t)[0];y.parentNode.insertBefore(o,y);
-        g.identify=function(i,v,s){g(l,{uid:i},s);if(v)g(l,v,s)};g.setUserVars=function(v,s){g(l,v,s)};g.event=function(i,v,s){g('event',{n:i,p:v},s)};
-        g.shutdown=function(){g("rec",!1)};g.restart=function(){g("rec",!0)};
-        g.consent=function(a){g("consent",!arguments.length||a)};
-        g.identifyAccount=function(i,v){o='account';v=v||{};v.acctId=i;g(o,v)};
-        g.clearUserCookie=function(){};
-    })(window,document,window['_fs_namespace'],'script','user');
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+      integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="assets/reset.css" />
+    <link
+      rel="shortcut icon"
+      href="assets/images/favicon.ico"
+      type="image/x-icon"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans|Work+Sans:300"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="assets/styles.css" />
+    <title>Dameon Mendoza's Web Developer Portfolio page.</title>
+    <meta
+      name="description"
+      content="Project Portfolio page for Web Developer Dameon Mendoza including links to projects, tech stack used, and social engagement."
+    />
+
+    <!-- for analytics -->
+    <script>
+      window["_fs_debug"] = false;
+      window["_fs_host"] = "fullstory.com";
+      window["_fs_org"] = "GRF3V";
+      window["_fs_namespace"] = "FS";
+      (function (m, n, e, t, l, o, g, y) {
+        if (e in m) {
+          if (m.console && m.console.log) {
+            m.console.log(
+              'FullStory namespace conflict. Please set window["_fs_namespace"].'
+            );
+          }
+          return;
+        }
+        g = m[e] = function (a, b, s) {
+          g.q ? g.q.push([a, b, s]) : g._api(a, b, s);
+        };
+        g.q = [];
+        o = n.createElement(t);
+        o.async = 1;
+        o.src = "https://" + _fs_host + "/s/fs.js";
+        y = n.getElementsByTagName(t)[0];
+        y.parentNode.insertBefore(o, y);
+        g.identify = function (i, v, s) {
+          g(l, { uid: i }, s);
+          if (v) g(l, v, s);
+        };
+        g.setUserVars = function (v, s) {
+          g(l, v, s);
+        };
+        g.event = function (i, v, s) {
+          g("event", { n: i, p: v }, s);
+        };
+        g.shutdown = function () {
+          g("rec", !1);
+        };
+        g.restart = function () {
+          g("rec", !0);
+        };
+        g.consent = function (a) {
+          g("consent", !arguments.length || a);
+        };
+        g.identifyAccount = function (i, v) {
+          o = "account";
+          v = v || {};
+          v.acctId = i;
+          g(o, v);
+        };
+        g.clearUserCookie = function () {};
+      })(window, document, window["_fs_namespace"], "script", "user");
     </script>
-  
-</head>
+  </head>
   <body>
     <div class="grid">
       <header class="logo" role="banner">
@@ -43,19 +93,19 @@
             <a
               class="portfolioLinks"
               href="https://www.linkedin.com/in/dameonmendoza"
-              target="blank"
+              target="_blank"
               >LinkedIn</a
             >
             <a
               class="portfolioLinks"
               href="https://twitter.com/Dameon_H2O"
-              target="blank"
+              target="_blank"
               >Twitter</a
             >
             <a
               class="portfolioLinks"
               href="https://github.com/Dameon1"
-              target="blank"
+              target="_blank"
               >Github</a
             >
           </div>
@@ -65,29 +115,47 @@
             <h2 class="portfolioNav topNavText">Portfolio</h2>
           </a>
           <div class="dropdown-content">
-            <a class="portfolioLinks" href="#what2eat">What2Eat</a>
+            <a class="portfolioLinks" href="#what2eat">What2eat</a>
             <a class="portfolioLinks" href="#sickFits">Sick Fits</a>
             <a class="portfolioLinks" href="#melata">Melata</a>
             <a class="portfolioLinks" href="#spanish_flash">Spanish Flash</a>
             <a class="portfolioLinks" href="#art_of_finding">Art of Finding</a>
-            <a class="portfolioLinks"
-               href="https://www.dameonmendoza.com/jsHangman/"
-               target="blank">Hangman</a>
-            <a class="portfolioLinks"
-               href="https://www.dameonmendoza.com/Star-Wars-RPG/"
-               target="blank">Star-Wars-RPG</a>              
-            <a class="portfolioLinks"
-               href="https://www.dameonmendoza.com/Psychic-Game/"
-               target="blank">Psychic-Game</a>
-            <a class="portfolioLinks"
-               href="https://www.dameonmendoza.com/triviaGame/"
-               target="blank">Trivia-Game</a>
-            <a class="portfolioLinks"
-               href="https://www.dameonmendoza.com/giphy-api/"
-               target="blank">Giphy-API</a>
-            <a class="portfolioLinks"
-               href="https://www.dameonmendoza.com/Weather-Finder/"
-               target="blank">Weather-Finder</a>
+            <a
+              class="portfolioLinks"
+              href="https://www.dameonmendoza.com/jsHangman/"
+              target="_blank"
+              >Hangman</a
+            >
+            <a
+              class="portfolioLinks"
+              href="https://www.dameonmendoza.com/Star-Wars-RPG/"
+              target="_blank"
+              >Star-Wars-RPG</a
+            >
+            <a
+              class="portfolioLinks"
+              href="https://www.dameonmendoza.com/Psychic-Game/"
+              target="_blank"
+              >Psychic-Game</a
+            >
+            <a
+              class="portfolioLinks"
+              href="https://www.dameonmendoza.com/triviaGame/"
+              target="_blank"
+              >Trivia-Game</a
+            >
+            <a
+              class="portfolioLinks"
+              href="https://www.dameonmendoza.com/giphy-api/"
+              target="_blank"
+              >Giphy-API</a
+            >
+            <a
+              class="portfolioLinks"
+              href="https://www.dameonmendoza.com/Weather-Finder/"
+              target="_blank"
+              >Weather-Finder</a
+            >
           </div>
         </div>
         <div>
@@ -107,9 +175,14 @@
         <div class="contentContainer">
           <h3 class="titleText" tabindex="0">Hello World.</h3>
           <p class="normalText" tabindex="0">
-            My name is Dameon Mendoza and I am a Web Developer having fun in the Sonoran
-            Desert area. I am currently creating web sites and applications along with creating new food dishes 
-            at <a href='https://www.harvestov.com/' target='blank'>Harvest Oro Valley</a>.        </div>
+            My name is Dameon Mendoza and I am a Web Developer having fun in the
+            Sonoran Desert area. I am currently creating web sites and
+            applications along with creating new food dishes at
+            <a href="https://www.harvestov.com/" target="_blank"
+              >Harvest Oro Valley</a
+            >.
+          </p>
+        </div>
       </article>
 
       <main class="portfolio" role="main" id="portfolioProjects">
@@ -130,28 +203,28 @@
           </p>
           <p class="techStackText">TECH STACK</p>
           <div class="techStackContainer">
-            <a href="https://www.mongodb.com/" target="blank">
+            <a href="https://www.mongodb.com/" target="_blank">
               <img
                 class="techStackImage"
                 src="assets/images/mongodb.jpg"
                 alt="MongoDB Logo"
               />
             </a>
-            <a href="https://expressjs.com/" target="blank">
+            <a href="https://expressjs.com/" target="_blank">
               <img
                 class="techStackImage"
                 src="assets/images/express3d.jpg"
                 alt="Express Logo"
               />
             </a>
-            <a href="https://redux.js.org/introduction" target="blank">
+            <a href="https://redux.js.org" target="_blank">
               <img
                 class="techStackImage"
                 src="assets/images/redux.jpg"
                 alt="Redux Logo"
               />
             </a>
-            <a href="https://nodejs.org/en/" target="blank">
+            <a href="https://nodejs.org/en/" target="_blank">
               <img
                 class="techStackImage"
                 src="assets/images/node.jpg"
@@ -160,13 +233,13 @@
             </a>
           </div>
           <div class="buttonContainer">
-            <a href="https://github.com/ThePaths/server" target="blank">
+            <a href="https://github.com/ThePaths/server" target="_blank">
               <button class="projectButtons">Source Code-Server</button>
             </a>
-            <a href="https://github.com/ThePaths/client" target="blank">
+            <a href="https://github.com/ThePaths/client" target="_blank">
               <button class="projectButtons">Source Code-Client</button>
             </a>
-            <a href="https://melata-app.firebaseapp.com/" target="blank">
+            <a href="https://melata-app.firebaseapp.com/" target="_blank">
               <button class="projectButtons">Deployed Site</button>
             </a>
           </div>
@@ -189,28 +262,28 @@
           </p>
           <p class="techStackText">TECH STACK</p>
           <div class="techStackContainer">
-            <a href="https://reactjs.org/" target="blank">
+            <a href="https://reactjs.org/" target="_blank">
               <img
                 class="techStackImage"
                 src="assets/images/react.jpg"
                 alt="React Logo"
               />
             </a>
-            <a href="https://www.apollographql.com/" target="blank">
+            <a href="https://www.apollographql.com/" target="_blank">
               <img
                 class="techStackImage"
                 src="assets/images/apolloclient.jpg"
                 alt="Apollo Logo"
               />
             </a>
-            <a href="https://github.com/prisma/graphql-yoga" target="blank">
+            <a href="https://github.com/prisma/graphql-yoga" target="_blank">
               <img
                 class="techStackImage"
                 src="assets/images/graphqlyoga.jpg"
                 alt="GraphQl Yoga Logo"
               />
             </a>
-            <a href="https://www.prisma.io/" target="blank">
+            <a href="https://www.prisma.io/" target="_blank">
               <img
                 class="techStackImage"
                 src="assets/images/prisma.jpg"
@@ -219,15 +292,15 @@
             </a>
           </div>
           <div class="buttonContainer">
-            <a href="https://github.com/Dameon1/sickFitsServer" target="blank">
+            <a href="https://github.com/Dameon1/sickFitsServer" target="_blank">
               <button class="projectButtons">Source Code-Server</button>
             </a>
-            <a href="https://github.com/Dameon1/sickFitsClient" target="blank">
+            <a href="https://github.com/Dameon1/sickFitsClient" target="_blank">
               <button class="projectButtons">Source Code-Client</button>
             </a>
             <a
               href="https://sickfitsnext-production.herokuapp.com/"
-              target="blank"
+              target="_blank"
             >
               <button class="projectButtons">Deployed Site</button>
             </a>
@@ -246,35 +319,35 @@
           <p class="normalText" tabindex="0">
             A recipe finder that allows users to search for recipes based on the
             ingredients they have then shows how many they are missing for that
-            particular recipe using React and Redux. Deployed site uses an Apollo and GraphQl stack.
-            Creating accounts users can keep track of saved recipes
-            for quick access to get back to them, along with removing them if
-            they are no longer wanted.
+            particular recipe using React and Redux. Deployed site uses an
+            Apollo and GraphQl stack. Creating accounts users can keep track of
+            saved recipes for quick access to get back to them, along with
+            removing them if they are no longer wanted.
           </p>
           <p class="techStackText">TECH STACK</p>
           <div class="techStackContainer">
-            <a href="https://www.mongodb.com/" target="blank">
+            <a href="https://www.mongodb.com/" target="_blank">
               <img
                 class="techStackImage"
                 src="assets/images/mongodb.jpg"
                 alt="MongoDB Logo"
               />
             </a>
-            <a href="https://expressjs.com/" target="blank">
+            <a href="https://expressjs.com/" target="_blank">
               <img
                 class="techStackImage"
                 src="assets/images/express3d.jpg"
                 alt="Express Logo"
               />
             </a>
-            <a href="https://redux.js.org/introduction" target="blank">
+            <a href="https://redux.js.org" target="_blank">
               <img
                 class="techStackImage"
                 src="assets/images/redux.jpg"
                 alt="Redux Logo"
               />
             </a>
-            <a href="https://nodejs.org/en/" target="blank">
+            <a href="https://nodejs.org/en/" target="_blank">
               <img
                 class="techStackImage"
                 src="assets/images/node.jpg"
@@ -283,13 +356,22 @@
             </a>
           </div>
           <div class="buttonContainer">
-            <a href="https://github.com/Dameon1/what2eat-server" target="blank">
+            <a
+              href="https://github.com/Dameon1/what2eat-server"
+              target="_blank"
+            >
               <button class="projectButtons">Source Code-Server</button>
             </a>
-            <a href="https://github.com/Dameon1/what2eat-client" target="blank">
+            <a
+              href="https://github.com/Dameon1/what2eat-client"
+              target="_blank"
+            >
               <button class="projectButtons">Source Code-Client</button>
             </a>
-            <a href="https://www.dameonmendoza.com/graphQL-recipeFinderClient/" target="blank">
+            <a
+              href="https://www.dameonmendoza.com/graphQL-recipeFinderClient/"
+              target="_blank"
+            >
               <button class="projectButtons">Deployed Site</button>
             </a>
           </div>
@@ -300,41 +382,40 @@
             />
           </div>
         </section>
-        
 
         <hr id="spanish_flash" />
         <section class="contentContainer">
           <h3 class="titleText" tabindex="0">Spanish Flash</h3>
           <p class="normalText" tabindex="0">
-            Spanish Flash is a learning application that uses a flash-card
-            style approach to helping one learn Spanish. Spanish Flash uses the
-            spaced repetition algorithm, which is proven to help with learning
-            and reinforcing one's understanding abilities in the field of study.
+            Spanish Flash is a learning application that uses a flash-card style
+            approach to helping one learn Spanish. Spanish Flash uses the spaced
+            repetition algorithm, which is proven to help with learning and
+            reinforcing one's understanding abilities in the field of study.
           </p>
           <p class="techStackText">TECH STACK</p>
           <div class="techStackContainer">
-            <a href="https://www.mongodb.com/" target="blank">
+            <a href="https://www.mongodb.com/" target="_blank">
               <img
                 class="techStackImage"
                 src="assets/images/mongodb.jpg"
                 alt="MongoDB Logo"
               />
             </a>
-            <a href="https://expressjs.com/" target="blank">
+            <a href="https://expressjs.com/" target="_blank">
               <img
                 class="techStackImage"
                 src="assets/images/express3d.jpg"
                 alt="Express Logo"
               />
             </a>
-            <a href="https://redux.js.org/introduction" target="blank">
+            <a href="https://redux.js.org" target="_blank">
               <img
                 class="techStackImage"
                 src="assets/images/redux.jpg"
                 alt="Redux Logo"
               />
             </a>
-            <a href="https://nodejs.org/en/" target="blank">
+            <a href="https://nodejs.org/en/" target="_blank">
               <img
                 class="techStackImage"
                 src="assets/images/node.jpg"
@@ -345,19 +426,19 @@
           <div class="buttonContainer">
             <a
               href="https://github.com/Dameon1/spacedRepetition-server"
-              target="blank"
+              target="_blank"
             >
               <button class="projectButtons">Source Code-Server</button>
             </a>
             <a
               href="https://github.com/Dameon1/spacedRepetition-client/tree/master"
-              target="blank"
+              target="_blank"
             >
               <button class="projectButtons">Source Code-Client</button>
             </a>
             <a
               href="https://www.dameonmendoza.com/spacedRepetition-client/"
-              target="blank"
+              target="_blank"
             >
               <button class="projectButtons">Deployed Site</button>
             </a>
@@ -387,7 +468,7 @@
           <div class="techStackContainer">
             <a
               href="https://www.w3.org/Style/CSS/Overview.en.html"
-              target="blank"
+              target="_blank"
             >
               <img
                 class="techStackImage"
@@ -395,14 +476,14 @@
                 alt="CSS3 Logo"
               />
             </a>
-            <a href="https://www.w3.org/" target="blank">
+            <a href="https://www.w3.org/" target="_blank">
               <img
                 class="techStackImage"
                 src="assets/images/html.jpg"
                 alt="HTML5 Logo"
               />
             </a>
-            <a href="https://jquery.com/" target="blank">
+            <a href="https://jquery.com/" target="_blank">
               <img
                 class="techStackImage"
                 src="assets/images/jquery.jpg"
@@ -411,10 +492,10 @@
             </a>
           </div>
           <div class="buttonContainer">
-            <a href="https://github.com/Dameon1/artFinder" target="blank">
+            <a href="https://github.com/Dameon1/artFinder" target="_blank">
               <button class="projectButtons">Source Code</button>
             </a>
-            <a href="https://dameon1.github.io/artFinder/" target="blank">
+            <a href="https://dameon1.github.io/artFinder/" target="_blank">
               <button class="projectButtons">Deployed Site</button>
             </a>
           </div>
@@ -471,7 +552,7 @@
             class="fab fa-github-square tag"
             alt="Github Logo"
             aria-label="Github"
-            target="blank"
+            target="_blank"
           ></a>
           <a
             href="https://www.linkedin.com/in/dameonmendoza"
@@ -479,7 +560,7 @@
             class="fab fa-linkedin tag"
             alt="LinkedIn Logo"
             aria-label="LinkedIn"
-            target="blank"
+            target="_blank"
           ></a>
           <a
             href="https://twitter.com/Dameon_H2O"
@@ -487,13 +568,17 @@
             class="fab fa-twitter-square tag"
             alt="Twitter Logo"
             aria-label="Twitter"
-            target="blank"
+            target="_blank"
           ></a>
         </div>
       </section>
 
       <footer class="footer" role="contentinfo">
+<<<<<<< HEAD
         <h4 class="footerText">Copyright DameonMendoza@2021</h4>
+=======
+        <h4 class="footerText">Copyright DameonMendoza@2020</h4>
+>>>>>>> 4ba68b7b0d7cc5b4d9fb970acfeb984564fe121c
       </footer>
     </div>
   </body>
