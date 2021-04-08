@@ -28,6 +28,7 @@ label {
     grid-template-areas: "hd"
                          "nav"
                          "about"
+                         "businesses"
                          "portfolio"
                          "contact"
                          "socials"
@@ -226,6 +227,13 @@ p.normalText {
   margin:10px auto;
 }
 
+/*-- Businesses Section --*/
+.businesses {
+  grid-area:businesses;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-gap: 1px;
+}
+
 /*-- Portfolio Section --*/
 .portfolio {
   grid-area:portfolio;
@@ -373,6 +381,7 @@ a:hover {
         grid-template-columns: 1fr 1fr;
         grid-template-areas:"hd nav"
                             "about about"
+                            "businesses businesses"
                             "portfolio portfolio"
                             "contact contact"
                             "socials socials"
@@ -397,6 +406,7 @@ a:hover {
       grid-template-columns:1fr 1fr 1fr;
       grid-template-areas:"hd hd nav"
                           "about about about"
+                          "businesses businesses businesses"
                           "portfolio portfolio portfolio"
                           "contact contact contact"
                           "socials socials socials"
