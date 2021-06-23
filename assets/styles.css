@@ -138,7 +138,6 @@ label {
   width:100%;
   margin: 2px auto;
 }
-
 .businessDescription {
   display:grid;
   grid-template-columns: 1fr;
@@ -163,11 +162,6 @@ label {
   font-size: 1.2em;
   width: 40%
 }
-/* .businessContainerColumns {
-  display:grid;
-  grid-template-rows:1f 1fr;
-  grid-template-columns: 1fr 1fr 1fr;
-} */
 .businessPictures {
   width:100%;
   min-width:100px;
@@ -179,7 +173,6 @@ label {
   -webkit-box-shadow: 1px 2px 5px 1px rgba(141, 243, 8, 0.3);
      -moz-box-shadow: 1px 2px 5px 1px rgba(141, 243, 8, 0.3);
           box-shadow: 1px 2px 5px 1px rgba(141, 243, 8, 0.3);
-  
 }
 .businessPictureLink {
   border-radius: 10px;
